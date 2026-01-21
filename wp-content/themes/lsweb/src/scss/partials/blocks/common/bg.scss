@@ -1,0 +1,49 @@
+/* stylelint-disable no-duplicate-selectors */
+.bg {
+	margin: 2rem 0;
+	padding: 2rem;
+
+	@include media-breakpoint-up( $bp ) {
+		margin: 3rem 0;
+		padding: 2.5rem;
+	}
+
+	&.full-width {
+		padding: 2.5rem 0;
+
+		@include media-breakpoint-up( $bp ) {
+			padding: 5rem 0;
+			border-radius: 0;
+		}
+	}
+
+	&.mt-0 {
+		margin-top: 0;
+	}
+
+	&.mb-0 {
+		margin-bottom: 0;
+	}
+
+	&.bg-color-white {
+		background: $white;
+	}
+
+	&.bg-color-beige {
+		background: $beige-light;
+	}
+
+	&.bg-color-gray {
+		background: $light;
+	}
+
+	&.bg-color-dark {
+		background: $accent;
+		color: $white;
+	}
+
+	&.bg-color-brown {
+		background: $brown;
+		color: $white;
+	}
+}

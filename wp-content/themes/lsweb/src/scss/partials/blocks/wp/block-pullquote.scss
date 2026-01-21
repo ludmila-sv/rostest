@@ -1,0 +1,33 @@
+.wp-block-pullquote {
+	padding: 0;
+	border: none;
+	text-align: left;
+
+	blockquote {
+		padding-left: 1rem;
+		border-left: 0.5rem solid currentColor;
+
+		@include media-breakpoint-up( $bp ) {
+			padding-left: 2.5rem;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&__citation,
+	cite,
+	footer {
+		font: 400 rem( 1.4 ) $content-font;
+		text-transform: none;
+	}
+
+	&.has-background {
+		blockquote {
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+			padding-right: 1.25rem;
+		}
+	}
+}

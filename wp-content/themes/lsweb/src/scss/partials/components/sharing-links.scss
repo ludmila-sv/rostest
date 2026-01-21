@@ -1,0 +1,58 @@
+.sharing-links {
+	ul {
+		list-style: none;
+		margin: 0 -0.25rem;
+		padding: 0;
+
+		.site-page & {
+			margin-bottom: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 0.25rem;
+			padding: 0;
+
+			.site-page & {
+				margin: 0 0.25rem;
+				padding: 0;
+			}
+
+			&:before {
+				display: none !important;
+			}
+
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 2rem;
+				height: 2rem;
+				background: $accent-variant;
+				border-radius: 50%;
+				border: none;
+				transition: all 0.3s ease-out;
+				text-decoration: none;
+
+				@include media-breakpoint-up( $bp ) {
+					width: 3rem;
+					height: 3rem;
+				}
+
+				&:hover,
+				&:focus,
+				&:active {
+					outline: none;
+					background: $accent;
+					border: none;
+					text-decoration: none;
+				}
+
+				svg {
+					height: 37.5%;
+					width: auto;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+/* stylelint-disable selector-not-notation */
+// this file should be the 1st in the compiled css,
+// because others like block-button.scss or block-column.scss should have an ability to override its styles.
+[class^='wp-block']:not( .wp-block-heading ):not( .wp-block-spacer ):not( .wp-block-button ):not( .wp-block-button__link ):not( .wp-block-list ) {
+	@include section-margin-small;
+}
+
+[class^='wp-block'] [class^='wp-block']:not( .wp-block-heading ):not( .wp-block-spacer ):not( .wp-block-button ):not( .wp-block-button__link ):not( .wp-block-list ) {
+	margin-top: 0;
+	margin-bottom: 0;
+}

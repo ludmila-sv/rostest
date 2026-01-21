@@ -1,0 +1,9 @@
+{
+  "extends": "@wordpress/prettier-config",
+  "rules": {
+	"useTabs": true,
+	"tabWidth": 4,
+	"printWidth": 120,
+	"bracketSpacing": true,
+  }
+}

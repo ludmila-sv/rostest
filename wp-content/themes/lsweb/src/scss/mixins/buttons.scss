@@ -1,0 +1,21 @@
+@mixin disabled-button {
+	background: $light-gray;
+	box-shadow: none;
+
+	&:hover,
+	&:focus {
+		transform: none;
+		box-shadow: none;
+	}
+}
+
+@mixin no-underline-link {
+	text-decoration: none !important;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none !important;
+	}
+}
+

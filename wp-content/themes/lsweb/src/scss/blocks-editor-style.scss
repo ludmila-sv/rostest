@@ -1,0 +1,94 @@
+/* stylelint-disable no-descending-specificity */
+/*
+* Here goes our Gutenberg Blocks embedded styles for ease of editing.
+*/
+@import 'overrides'; // load our grid custom breakpoints and override bootstrap's variables if needed
+
+// bootstrap's imported
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// our local styles and mixins
+
+@import 'variables'; // we load our own theme's variables after bootstrap's to make sure we override colors and  other stuff
+@import 'mixins/*'; // all our mixins are in directory separated by field of usage in files.
+
+// @import 'partials/base';
+@import 'partials/typography';
+@import 'partials/blocks/**/*';
+@import 'partials/components/*';
+
+// these are wrapped in editor so we'll not override global fonts etc.
+.editor-styles-wrapper {
+	* {
+		box-sizing: border-box;
+	}
+
+	.wp-block {
+		max-width: 100%;
+	}
+
+	.acf-tab-wrap {
+		ul {
+			li {
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		.acf-hl > li {
+			float: left;
+			display: block;
+			margin: 0 0.5em 0 0;
+			padding: 0;
+		}
+	}
+
+	a[class^='acf-'] {
+		text-decoration: none;
+	}
+
+	.wp-switch-editor {
+		height: auto;
+	}
+
+	section {
+		overflow: hidden;
+
+		.container {
+			width: 100%;
+			padding: 0 calc( $grid-gutter-width / 2 );
+		}
+	}
+
+	.acf-block-fields.acf-fields {
+		ul {
+			li {
+				&:before {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	ol {
+		ul {
+			li.block-editor-block-list__block.wp-block.wp-block-list-item {
+				div.block-editor-rich-text__editable.rich-text {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.video-slider__item {
+		width: 330px;
+		flex: 0 0 330px;
+	}
+}
+
+.block-editor__container img.img-fit {
+	height: 100%;
+}

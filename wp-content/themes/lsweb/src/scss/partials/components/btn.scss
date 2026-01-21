@@ -1,0 +1,299 @@
+/* stylelint-disable no-descending-specificity */
+.btn {
+	display: inline-block; // height: rem( 5.6 );
+	padding: rem( 1.5 ) 1.25rem;
+	border-radius: rem( 0.7 );
+	border: 1px solid transparent;
+	transition: all 0.3s ease-out;
+
+	@include button-1;
+
+	text-transform: none;
+	text-align: center;
+	cursor: pointer;
+
+	@include no-underline-link;
+
+	&:disabled {
+		@include disabled-button;
+	}
+
+	@include media-breakpoint-up( sm ) {
+		border-width: rem( 0.1 );
+	}
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 1.8 );
+	}
+
+	&--primary {
+		background: $accent;
+		border-color: $accent;
+		color: $white;
+
+		&:disabled {
+			@include disabled-button;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $white;
+		}
+
+		&.btn--red {
+			background: $maroon;
+			border-color: $maroon;
+		}
+
+		&.btn--yellow {
+			background: $yellow;
+			border-color: $yellow;
+			color: $dark;
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: $dark;
+			}
+
+			&.btn--arrow {
+				svg path {
+					fill: $dark;
+				}
+			}
+		}
+
+		&.btn--brown {
+			background: $brown;
+			border-color: $brown;
+		}
+	}
+
+	&--secondary {
+		background: transparent;
+		border-top-color: $accent;
+		border-bottom-color: $accent;
+		color: $accent;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: $white;
+			color: $accent;
+		}
+
+		&:disabled {
+			@include disabled-button;
+		}
+
+		&.btn--arrow {
+			svg path {
+				fill: $accent;
+			}
+		}
+
+		&.btn--round {
+			border-color: $accent;
+		}
+
+		&.btn--red {
+			border-top-color: $maroon;
+			border-bottom-color: $maroon;
+			color: $maroon;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $maroon;
+			}
+
+			&.btn--arrow {
+				svg path {
+					fill: $maroon;
+				}
+			}
+
+			&.btn--round {
+				border-color: $maroon;
+			}
+		}
+
+		&.btn--brown {
+			border-top-color: $brown;
+			border-bottom-color: $brown;
+			color: $brown;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $brown;
+			}
+
+			&.btn--arrow {
+				svg path {
+					fill: $brown;
+				}
+			}
+
+			&.btn--round {
+				border-color: $brown;
+			}
+		}
+	}
+
+	&--tertiary {
+		position: relative;
+		padding-left: 0;
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		color: $accent;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $accent;
+			background: transparent;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: rem( 1.2 );
+			height: rem( 2.4 );
+			margin: rem( -1.2 ) 0 0;
+			background: url( '../images/components/chevron-right.svg' ) no-repeat center;
+			background-size: 0.5rem 0.75rem;
+			transition: all 0.3s ease-out;
+		}
+
+		&.btn--arrow {
+			&:before {
+				display: none;
+			}
+		}
+
+		&.btn--red {
+			color: $maroon;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $maroon;
+			}
+
+			&.btn--arrow {
+				svg path {
+					fill: $maroon;
+				}
+			}
+		}
+
+		&.btn--brown {
+			color: $brown;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $brown;
+			}
+
+			&.btn--arrow {
+				svg path {
+					fill: $brown;
+				}
+			}
+		}
+	}
+
+	&--round {
+		height: rem( 5.2 );
+		border-radius: rem( 2.6 );
+		white-space: nowrap;
+	}
+
+	&--more {
+		position: relative;
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		color: $accent;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $accent;
+			background: transparent;
+		}
+	}
+
+	&--play {
+		display: block;
+		width: rem( 8.6 );
+		height: rem( 8.6 );
+		padding: 0;
+		// background: rgba( 255, 255, 255, 0.5 ) url( '../images/play.svg' ) no-repeat center / 2.5rem;
+		background: rgba( 255, 255, 255, 0.5 ) url( '../images/play2.svg' ) no-repeat center / 3.25rem;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			@include a-hover;
+		}
+	}
+
+	&--close {
+		width: rem( 1.4 );
+		height: rem( 1.4 );
+		background: url( '../images/components/close.svg' ) no-repeat center;
+		cursor: pointer;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: url( '../images/components/close.svg' ) no-repeat center;
+
+			@include a-hover;
+		}
+	}
+
+	&--arrow {
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 1.25rem;
+			height: 1.25rem;
+			margin-left: 1.25rem;
+
+			@media ( max-width: 375px ) {
+				display: none;
+			}
+		}
+	}
+
+	&--whatsapp {
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			width: rem( 2.159 );
+			height: rem( 2.25 );
+			margin-right: 1.25rem;
+			background: url( '../images/whatsapp.svg' ) no-repeat center / 100%;
+		}
+	}
+
+	&--telegram {
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			width: rem( 2 );
+			height: rem( 2 );
+			margin-right: 1.25rem;
+			background: url( '../images/telegram.svg' ) no-repeat center / 100%;
+		}
+	}
+}

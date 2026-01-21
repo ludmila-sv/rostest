@@ -1,0 +1,275 @@
+/* stylelint-disable no-duplicate-selectors */
+.accordion {
+	margin: rem( 10 ) 0 rem( 4 );
+
+	@include media-breakpoint-up( $bp ) {
+		margin: rem( 12 ) 0 rem( 4 );
+	}
+
+	&--dark-bg {
+		position: relative;
+		overflow: hidden;
+		margin: 0;
+		padding: rem( 4 ) 0 rem( 3 );
+		background: $accent;
+		border-radius: 1.25rem 1.25rem 0 0;
+
+		@include media-breakpoint-up( $bp ) {
+			padding: rem( 7 ) 0 rem( 4 );
+			border-radius: 2.5rem 2.5rem 0 0;
+		}
+
+		.container {
+			position: relative;
+		}
+	}
+
+	&__bg {
+		opacity: 0.2;
+		mix-blend-mode: luminosity;
+
+		img {
+			display: none;
+
+			@include media-breakpoint-up( $bp ) {
+				display: block;
+				object-position: center top;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 0 rem( 3 );
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0 0 rem( 4 );
+		}
+
+		.accordion--dark-bg & {
+			color: $white;
+		}
+
+		b {
+			font-weight: 400;
+			color: $beige-dark;
+		}
+
+		.accordion--title-centered & {
+			text-align: center;
+		}
+	}
+
+	&__item {
+		overflow: hidden;
+		margin: 0 0 rem( 1 );
+		background: $white;
+		border-radius: rem( 0.7 );
+
+		&:last-child {
+			margin: 0;
+		}
+
+		.accordion--dark-bg & {
+			border-radius: rem( 2 );
+		}
+
+		&__title {
+			position: relative;
+			margin: 0;
+			padding: rem( 2 ) rem( 8 ) rem( 2 ) rem( 2 );
+			transition: all 0.3s ease-out;
+			background: $light;
+			border-radius: rem( 0.7 );
+			cursor: pointer;
+			font-size: 1rem;
+			font-weight: 400;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: 1.25rem;
+			}
+
+			.accordion__item--numbered & {
+				display: flex;
+			}
+
+			.accordion--dark & {
+				background: $accent;
+				border-radius: rem( 2 );
+				color: $white;
+			}
+
+			.accordion--dark-bg & {
+				background: $white;
+				border-radius: rem( 2 );
+				color: $dark;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: rem( 2 );
+				width: rem( 4 );
+				height: rem( 4 );
+				margin: rem( -2 ) 0 0;
+				background: $brown url( '../images/arrow-down.svg' ) no-repeat center;
+				background-size: rem( 2.4 ) auto;
+				border-radius: 50%;
+				transition: all 0.3s ease-out;
+
+				.accordion--dark-bg &,
+				.accordion--dark & {
+					background-color: $yellow;
+					background-image: url( '../images/arrow-down-dark.svg' );
+				}
+			}
+
+			&__num {
+				margin-right: 0.3em;
+			}
+
+			b {
+				transition: all 0.3s ease-out;
+				font-weight: 400;
+				color: $beige-dark;
+
+				.accordion--dark & {
+					color: $yellow;
+				}
+			}
+
+			i {
+				transition: all 0.3s ease-out;
+				font-style: normal;
+				color: $accent-lightest;
+			}
+
+			&.focused,
+			&:hover {
+				background: $beige-dark;
+				color: $white;
+
+				.accordion--dark & {
+					background-color: $accent;
+				}
+
+				.accordion--dark-bg & {
+					background-color: $yellow;
+					color: $dark;
+				}
+
+				&:after {
+					background-color: $accent;
+
+					.accordion--dark & {
+						background-color: $yellow;
+					}
+
+					.accordion--dark-bg & {
+						background-image: url( '../images/arrow-down.svg' );
+					}
+				}
+
+				b {
+					color: $white;
+
+					.accordion--dark & {
+						color: $yellow;
+					}
+
+					.accordion--dark-bg & {
+						color: $dark;
+					}
+				}
+
+				i {
+					color: $white;
+
+					.accordion--dark & {
+						color: $accent-lightest;
+					}
+				}
+			}
+		}
+
+		&__text {
+			display: grid;
+			grid-template-rows: 0fr;
+			overflow: hidden;
+			transition: all 0.3s ease-out;
+
+			&__body {
+				overflow: hidden;
+			}
+
+			&__inner {
+				padding: 1.5rem 1.25rem 3rem;
+
+				@include media-breakpoint-up( $bp ) {
+					padding-right: 10rem;
+				}
+
+				ul {
+					.site-page & {
+						li {
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			h3 {
+				margin: 1.5rem 0 1rem;
+
+				@include media-breakpoint-up( $bp ) {
+					margin: 2rem 0 1rem;
+				}
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		&.accordion-open {
+			.accordion__item__title {
+				&:after {
+					transform: rotateX( 180deg );
+
+					.accordion--dark-bg & {
+						background-image: url( '../images/arrow-down.svg' );
+					}
+				}
+
+				.accordion--dark-bg & {
+					background-color: $yellow;
+					color: $dark;
+				}
+
+				b {
+					.accordion--dark & {
+						color: $yellow;
+					}
+
+					.accordion--dark-bg & {
+						color: $dark;
+					}
+				}
+			}
+
+			.accordion__item__text {
+				grid-template-rows: 1fr;
+			}
+		}
+	}
+
+	&__btn {
+		margin: rem( 3 ) 0 0;
+		text-align: center;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: rem( 6 ) 0 0;
+		}
+	}
+}

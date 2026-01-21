@@ -1,0 +1,17 @@
+.wp-block-columns {
+	display: block;
+	gap: 0;
+
+	@media ( min-width: 782px ) {
+		display: flex;
+		gap: $grid-gutter-width;
+	}
+
+	.wp-block-column {
+		margin: 0 0 $spacer;
+
+		@media ( min-width: 782px ) {
+			margin-bottom: 0;
+		}
+	}
+}

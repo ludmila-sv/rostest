@@ -1,0 +1,155 @@
+/* stylelint-disable no-descending-specificity */
+.cta {
+	position: relative;
+	overflow: hidden;
+	padding: rem( 7 ) 0;
+	text-align: center;
+	background: $light;
+
+	@include media-breakpoint-up( $bp ) {
+		padding: rem( 12.3 ) 0 rem( 11.7 );
+	}
+
+	&.bg-color-white,
+	&.bg-color-white.cta--rounded .cta__bg {
+		background: $white;
+	}
+
+	&.bg-color-beige,
+	&.bg-color-beige.cta--rounded .cta__bg {
+		background: $beige-light;
+	}
+
+	&.bg-color-gray,
+	&.bg-color-gray.cta--rounded .cta__bg {
+		background: $light;
+	}
+
+	&.bg-color-brown,
+	&.bg-color-brown.cta--rounded .cta__bg {
+		background: $brown;
+		color: $white;
+	}
+
+	&.bg-color-dark,
+	&.bg-color-dark.cta--rounded .cta__bg {
+		background: $accent;
+		color: $white;
+
+		.btn--yellow {
+			&:hover,
+			&:focus,
+			&:active {
+				background: $white;
+				border-color: $white;
+			}
+		}
+	}
+
+	&.cta--rounded {
+		padding: 0;
+		background: transparent;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&__bg {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		img {
+			object-position: center top;
+		}
+
+		.cta--rounded & {
+			left: 1.25rem;
+			right: 1.25rem;
+			background: $accent;
+			border-radius: rem( 2 );
+
+			@include media-breakpoint-up( $bp ) {
+				left: calc( $grid-gutter-width / 2 );
+				right: calc( $grid-gutter-width / 2 );
+				border-radius: rem( 2 ) rem( 10 );
+			}
+		}
+
+		& ~ div {
+			position: relative;
+		}
+	}
+
+	&__inner {
+		position: relative;
+		padding: 2.5rem rem( 1.5 );
+	}
+
+	&__title {
+		margin: 0 0 1rem;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0 0 0.5rem;
+		}
+
+		&--small {
+			font-size: 1.25rem;
+			text-transform: none;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: rem( 4 );
+				text-transform: uppercase;
+			}
+
+			br {
+				display: none;
+
+				@include media-breakpoint-up( $bp ) {
+					display: block;
+				}
+			}
+		}
+
+		b {
+			font-weight: 400;
+			color: $beige-dark;
+		}
+	}
+
+	&__subtitle {
+		@include media-breakpoint-up( $bp ) {
+			max-width: rem( 55 );
+			margin: 0 auto;
+
+			.cta--rounded & {
+				max-width: none;
+			}
+		}
+	}
+
+	&__btn {
+		margin: rem( 7 ) 0 0;
+		text-align: center;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: rem( 6 ) 0 0;
+		}
+
+		.cta--rounded & {
+			margin: rem( 3 ) 0 0;
+
+			@include media-breakpoint-up( $bp ) {
+				margin: rem( 5 ) 0 0;
+			}
+		}
+
+		.btn {
+			min-width: rem( 22.3 );
+		}
+	}
+}

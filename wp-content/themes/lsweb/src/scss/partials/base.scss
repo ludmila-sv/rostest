@@ -1,0 +1,201 @@
+/* stylelint-disable length-zero-no-unit */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable scss/at-extend-no-missing-placeholder */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+:root {
+	--scrollbar-width: 0px;
+}
+
+html {
+	@include media-breakpoint-down( $bp-down ) {
+		overflow-x: hidden; // for mobile menu that uses transformX.
+		width: 100%;
+	}
+
+	@include media-breakpoint-up( sm ) {
+		font-size: 23.04px; // 540/375 * 16
+	}
+
+	@include media-breakpoint-up( md ) {
+		font-size: 30.72px; // 720/375 * 16
+	}
+
+	@include media-breakpoint-up( lg ) {
+		font-size: 11.05px; // 960/1390 * 16
+	}
+
+	@include media-breakpoint-up( xl ) {
+		font-size: 12.54px; // 1090/1390 * 16
+	}
+
+	@include media-breakpoint-up( hd ) {
+		font-size: 16px;
+	}
+
+	@include media-breakpoint-up( xxl ) {
+		font-size: 17.95px; // 1560/1390 * 16
+	}
+}
+
+body {
+	@include body;
+
+	& {
+		position: relative;
+		min-width: 320px;
+		margin: 0 !important;
+		padding: 0 !important;
+		background: $white;
+		color: $dark;
+	}
+
+	@include media-breakpoint-down( $bp-down ) {
+		overflow-x: hidden; // for mobile menu that uses transformX.
+		width: 100%;
+
+		&.menu-open {
+			overflow: hidden;
+			height: 100vh;
+		}
+	}
+}
+
+.site-page {
+	&__content {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		min-height: 100vh;
+		padding: 0;
+
+		.courses-template-default & {
+			display: block;
+		}
+	}
+}
+
+.container {
+	padding-left: rem( 2 );
+	padding-right: rem( 2 );
+
+	@include media-breakpoint-up( $bp ) {
+		padding-left: calc( $grid-gutter-width / 2 );
+		padding-right: calc( $grid-gutter-width / 2 );
+	}
+}
+
+.mt-0 {
+	margin-top: 0 !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.pt-0 {
+	padding-top: 0 !important;
+}
+
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+
+.oh {
+	overflow: hidden;
+}
+
+/* Input elements */
+
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+	outline: 0 !important;
+	cursor: pointer;
+	appearance: none;
+}
+
+button[type='submit'] {
+	height: rem( 6.5 );
+	padding: rem( 2.3 ) rem( 2 ) rem( 2.1 );
+
+	@include media-breakpoint-up( $bp ) {
+		border-radius: rem( 2 );
+	}
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+	width: 100%;
+	height: rem( 6.5 );
+	padding: rem( 2.3 ) rem( 2 ) rem( 2.1 );
+	background: $white;
+	border: 0.125rem solid transparent;
+	border-radius: rem( 1.5 );
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	text-align: left;
+	color: $black;
+
+	@include media-breakpoint-up( $bp ) {
+		border-radius: rem( 2 );
+	}
+
+	@include placeholder;
+
+	&.error {
+		border-color: $semantic-error;
+	}
+}
+
+textarea {
+	width: 100%;
+	height: 9.375rem;
+	padding: rem( 2.3 ) rem( 2 ) rem( 2.1 );
+	background: $white;
+	border: 0.125rem solid transparent;
+	border-radius: rem( 1.5 );
+	font-size: 1rem;
+	font-weight: 400;
+	color: $black;
+
+	@include placeholder;
+
+	@include media-breakpoint-up( $bp ) {
+		border-radius: rem( 2 );
+		text-align: left;
+	}
+
+	&.error {
+		border-color: $semantic-error;
+	}
+}
+
+input[type='checkbox'] {
+	display: none;
+
+	+ label:before {
+		content: '';
+		display: block;
+		flex: 0 0 1rem;
+		width: 1rem;
+		height: 1rem;
+		margin: 0 0.5rem 0 0;
+		border-radius: rem( 0.3 );
+		background: $white;
+		border: 0.125rem solid transparent;
+	}
+
+	&:checked + label:before {
+		background: $white url( '../images/components/checkmark.svg' ) no-repeat center;
+		background-size: 100%;
+	}
+}
+
+*:focus,
+*:focus-visible {
+	outline: 0 !important;
+}

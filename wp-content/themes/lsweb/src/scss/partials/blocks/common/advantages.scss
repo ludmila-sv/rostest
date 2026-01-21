@@ -1,0 +1,95 @@
+.advantages {
+	padding: rem( 2.2 ) 0 rem( 2.4 );
+	background: $white;
+
+	@include media-breakpoint-up( $bp ) {
+		padding: rem( 3 ) 0 rem( 4.2 );
+	}
+
+	&__title {
+		max-width: none;
+		margin: 0 0 1.25rem;
+		text-align: center;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0 0 2rem;
+		}
+	}
+
+	&__list {
+		@include media-breakpoint-up( $bp ) {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 0 rem( -0.5 ) rem( -1 );
+		}
+	}
+
+	&__item {
+		flex: 0 0 100%;
+		width: 100%;
+		margin: 0 0 rem( 1 );
+
+		@include media-breakpoint-up( sm ) {
+			flex: 0 0 rem( 29 );
+			width: rem( 29 );
+		}
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 0 0 25%;
+			width: 25%;
+			padding: 0 rem( 0.5 );
+
+			.advantages--3 & {
+				flex: 0 0 33.3333%;
+				width: 33.3333%;
+			}
+
+			.advantages--5 & {
+				flex: 0 0 20%;
+				width: 20%;
+			}
+		}
+
+		&__inner {
+			width: 100%;
+			height: 100%;
+			padding: rem( 2 ) rem( 3 );
+			border: 1px solid $gray;
+			border-radius: 1.25rem;
+
+			@include media-breakpoint-up( sm ) {
+				border-width: rem( 0.1 );
+			}
+		}
+
+		&__icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			width: rem( 5 );
+			height: rem( 5 );
+			margin: 0 0 1.25rem;
+		}
+
+		&__title {
+			@include h-4;
+		}
+
+		&__text {
+			font-size: rem( 1.4 );
+			color: $dark07;
+
+			p {
+				font-size: rem( 1.4 );
+			}
+
+			em {
+				font-size: rem( 1.2 );
+				font-style: normal;
+				color: $dark-gray;
+			}
+		}
+	}
+}

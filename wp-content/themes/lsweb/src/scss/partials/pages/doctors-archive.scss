@@ -1,0 +1,45 @@
+.archive {
+	padding: rem( 4 ) 0 rem( 6 );
+
+	@include media-breakpoint-up( $bp ) {
+		padding: rem( 6 ) 0 rem( 8 );
+	}
+
+	&__filter {
+		margin: 0 0 2rem;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0 2rem 0 0;
+		}
+	}
+
+	&__no-results {
+		font-size: 1rem;
+		text-align: center;
+
+		@include media-breakpoint-up( $bp ) {
+			font-size: 1.25rem;
+		}
+	}
+
+	.doctor-selector {
+		margin: 0;
+		padding: 0;
+
+		&__selects {
+			display: block;
+		}
+
+		&__select {
+			margin: 0 0 1rem;
+
+			@include media-breakpoint-up( $bp ) {
+				margin: 0 0 1.25rem;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+}

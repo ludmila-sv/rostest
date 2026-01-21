@@ -1,0 +1,46 @@
+.breadcrumbs {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline;
+		position: relative;
+		margin: 0;
+		padding: 0 2.625rem 0 0;
+		letter-spacing: -0.01em;
+		line-height: 1.4;
+		color: $middle-gray;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 0.625rem;
+			height: 1.0625rem;
+			margin-right: 1rem;
+			background: url( '../images/arrow.svg' ) no-repeat center;
+			background-size: cover;
+			transform: translateY( -50% );
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+
+		a {
+			color: $dark;
+
+			&:hover,
+			&:focus,
+			&:active {
+				outline: none;
+				text-decoration: none;
+				color: $dark;
+			}
+		}
+	}
+}

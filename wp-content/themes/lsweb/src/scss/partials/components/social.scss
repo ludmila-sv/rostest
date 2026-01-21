@@ -1,0 +1,34 @@
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 rem( -0.5 ) rem( -0.5 );
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem( 2.8 );
+		height: rem( 2.8 );
+		margin: 0 rem( 0.5 ) rem( 0.5 );
+		background: $light;
+		border-radius: rem( 0.8 );
+		line-height: 1;
+		text-align: center;
+
+		&:hover,
+		&:focus,
+		&:active {
+			outline: none;
+			text-decoration: none;
+			background: $light;
+			border: none;
+		}
+
+		svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

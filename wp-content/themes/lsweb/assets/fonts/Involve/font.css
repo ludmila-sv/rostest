@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-Regular.eot' );
+	src: url( 'Involve-Regular.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-Regular.woff2' ) format( 'woff2' ),
+		url( 'Involve-Regular.woff' ) format( 'woff' ),
+		url( 'Involve-Regular.ttf' ) format( 'truetype' ),
+		url( 'Involve-Regular.svg#Involve-Regular' ) format( 'svg' );
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-Oblique.eot' );
+	src: url( 'Involve-Oblique.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-Oblique.woff2' ) format( 'woff2' ),
+		url( 'Involve-Oblique.woff' ) format( 'woff' ),
+		url( 'Involve-Oblique.ttf' ) format( 'truetype' ),
+		url( 'Involve-Oblique.svg#Involve-Oblique' ) format( 'svg' );
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-Medium.eot' );
+	src: url( 'Involve-Medium.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-Medium.woff2' ) format( 'woff2' ),
+		url( 'Involve-Medium.woff' ) format( 'woff' ),
+		url( 'Involve-Medium.ttf' ) format( 'truetype' ),
+		url( 'Involve-Medium.svg#Involve-Medium' ) format( 'svg' );
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-MediumOblique.eot' );
+	src: url( 'Involve-MediumOblique.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-MediumOblique.woff2' ) format( 'woff2' ),
+		url( 'Involve-MediumOblique.woff' ) format( 'woff' ),
+		url( 'Involve-MediumOblique.ttf' ) format( 'truetype' ),
+		url( 'Involve-MediumOblique.svg#Involve-MediumOblique' ) format( 'svg' );
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-SemiBold.eot' );
+	src: url( 'Involve-SemiBold.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-SemiBold.woff2' ) format( 'woff2' ),
+		url( 'Involve-SemiBold.woff' ) format( 'woff' ),
+		url( 'Involve-SemiBold.ttf' ) format( 'truetype' ),
+		url( 'Involve-SemiBold.svg#Involve-SemiBold' ) format( 'svg' );
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-SemiBoldOblique.eot' );
+	src: url( 'Involve-SemiBoldOblique.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-SemiBoldOblique.woff2' ) format( 'woff2' ),
+		url( 'Involve-SemiBoldOblique.woff' ) format( 'woff' ),
+		url( 'Involve-SemiBoldOblique.ttf' ) format( 'truetype' ),
+		url( 'Involve-SemiBoldOblique.svg#Involve-SemiBoldOblique' ) format( 'svg' );
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-Bold.eot' );
+	src: url( 'Involve-Bold.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-Bold.woff2' ) format( 'woff2' ),
+		url( 'Involve-Bold.woff' ) format( 'woff' ),
+		url( 'Involve-Bold.ttf' ) format( 'truetype' ),
+		url( 'Involve-Bold.svg#Involve-Bold' ) format( 'svg' );
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url( 'Involve-BoldOblique.eot' );
+	src: url( 'Involve-BoldOblique.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( 'Involve-BoldOblique.woff2' ) format( 'woff2' ),
+		url( 'Involve-BoldOblique.woff' ) format( 'woff' ),
+		url( 'Involve-BoldOblique.ttf' ) format( 'truetype' ),
+		url( 'Involve-BoldOblique.svg#Involve-BoldOblique' ) format( 'svg' );
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+

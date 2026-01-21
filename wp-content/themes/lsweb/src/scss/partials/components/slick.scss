@@ -1,0 +1,254 @@
+/* stylelint-disable no-descending-specificity */
+@charset "UTF-8";
+/* Slider */
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	user-select: none;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	&:focus {
+		outline: none;
+	}
+
+	&.dragging {
+		cursor: pointer;
+	}
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	transform: none;
+
+	@include optimize2DAnimationsOn3D;
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: stretch;
+	margin-left: auto;
+	margin-right: auto;
+
+	.slick-vertical & {
+		display: block;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+}
+
+.slick-slide {
+	min-height: 1px;
+	height: inherit;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	@include optimize2DAnimationsOn3D;
+
+	& > div {
+		height: 100%;
+		width: 100%;
+	}
+
+	img {
+		display: block;
+	}
+
+	&.slick-loading img {
+		display: none;
+	}
+
+	&.dragging img {
+		pointer-events: none;
+	}
+
+	.slick-initialized & {
+		display: flex;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+
+	.slick-vertical & {
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+
+		@include media-breakpoint-up( sm ) {
+			border-width: 0.0625rem;
+		}
+	}
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slick-controls {
+	display: flex;
+	margin: 0 -0.25rem;
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	display: block;
+	height: rem( 4.5 );
+	width: rem( 4.5 );
+	margin: 0 0.25rem;
+	padding: 0;
+	border-radius: rem( 0.7 );
+	border: none;
+	border-bottom: 1px solid $brown;
+	outline: none;
+
+	@include media-breakpoint-up( $bp ) {
+		border-bottom-width: rem( 0.1 );
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+	&.slick-disabled {
+		opacity: 0.5;
+		border-color: transparent;
+	}
+}
+
+.slick-prev {
+	background: url( '../images/arrow-left.svg' ) no-repeat center / rem( 2.6 ) rem( 2.5 );
+}
+
+.slick-next {
+	background: url( '../images/arrow-right.svg' ) no-repeat center / rem( 2.6 ) rem( 2.5 );
+}
+
+/* Dots */
+
+.slick-dots {
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+
+	li {
+		position: relative;
+		display: inline-block;
+		height: 0.625rem;
+		width: 0.625rem;
+		margin: 0 rem( 0.5 );
+		padding: 0;
+		cursor: pointer;
+
+		@include media-breakpoint-up( lg ) {
+			height: rem( 1.5 );
+			width: rem( 1.5 );
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			height: rem( 2 );
+			width: rem( 2 );
+		}
+
+		button {
+			border: 0;
+			background: transparent;
+			display: block;
+			height: 0.625rem;
+			width: 0.625rem;
+			outline: none;
+			line-height: 0;
+			font-size: 0;
+			color: transparent;
+			padding: rem( 0.5 );
+			cursor: pointer;
+
+			@include media-breakpoint-up( lg ) {
+				height: rem( 1.5 );
+				width: rem( 1.5 );
+			}
+
+			@include media-breakpoint-up( xxl ) {
+				height: rem( 2 );
+				width: rem( 2 );
+			}
+
+			&:hover,
+			&:focus {
+				outline: none;
+
+				&:before {
+					background: fade_out( $slick-dot-color, $slick-opacity-not-active );
+				}
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: ' ';
+				height: rem( 1 );
+				width: rem( 1 );
+				line-height: rem( 2 );
+				border: solid rem( 2 );
+				text-align: center;
+				color: $slick-dot-color;
+				opacity: 1;
+
+				@include media-breakpoint-up( lg ) {
+					height: rem( 1.5 );
+					width: rem( 1.5 );
+					line-height: rem( 1.5 );
+				}
+
+				@include media-breakpoint-up( xxl ) {
+					height: rem( 2 );
+					width: rem( 2 );
+				}
+			}
+		}
+
+		&.slick-active button:before {
+			background: $slick-dot-color-active;
+			color: $slick-dot-color-active;
+			opacity: $slick-opacity-default;
+		}
+	}
+}
+
+// class modifier for slider behavior
+.overflow-slider-with-all-visible {
+	@include overflow-slider-with-all-visible;
+}
+
+.overflow-slider-with-fade {
+	@include overflow-slider-with-fade;
+}
+
+.overflow-slider-fade-single {
+	@include overflow-slider-fade-single;
+}

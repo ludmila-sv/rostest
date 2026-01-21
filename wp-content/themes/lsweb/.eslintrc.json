@@ -1,0 +1,30 @@
+{
+  "extends": [
+	"plugin:@wordpress/eslint-plugin/recommended",
+	"plugin:prettier/recommended"
+  ],
+  "rules": {
+	"prettier/prettier": [
+		"error",
+		{"printWidth": 200},
+		{
+		  "usePrettierrc": true
+		}
+	],
+	"no-console": "warn",
+	"max-len": [
+		"error",
+		{
+		  "code": 200,
+		  "tabWidth": 4,
+		  "ignoreComments": true, //"comments": 80
+		  "ignoreUrls": true,
+		  "ignoreStrings": true,
+		  "ignoreTemplateLiterals": true
+		}
+	]
+  },
+  "globals": {
+	"jQuery": true
+  }
+}

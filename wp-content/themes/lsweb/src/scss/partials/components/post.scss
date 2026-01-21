@@ -1,0 +1,130 @@
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable no-descending-specificity */
+.post {
+	height: 100%;
+	border-bottom: 1px solid $gray;
+
+	@include media-breakpoint-up( sm ) {
+		display: flex;
+		flex-direction: column;
+		border-width: rem( 0.1 );
+	}
+
+	&__thumbnail {
+		flex: 0 0 auto;
+		display: block;
+		position: relative;
+		width: 100%;
+		padding-top: 56.29%;
+		background-color: $gray;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border: none;
+			outline: none;
+			text-decoration: none;
+		}
+	}
+
+	&__body {
+		padding: rem( 1.6 ) rem( 1.5 ) rem( 2 );
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 1 1 100%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__category {
+		margin: 0 0 rem( 0.3 );
+
+		a {
+			display: inline-block;
+			margin: 0 0 rem( 0.5 );
+			padding: rem( 0.3 ) rem( 1 ) rem( 0.2 );
+			border-radius: rem( 10 );
+			border: 1px solid $brown;
+			font-size: rem( 1.2 );
+			font-weight: 400;
+			text-decoration: none;
+			color: $brown;
+
+			@include media-breakpoint-up( sm ) {
+				border-width: rem( 0.1 );
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $brown;
+			}
+		}
+	}
+
+	&__title {
+		margin: auto 0 1rem;
+		font-size: 1.25rem;
+		font-weight: 500;
+
+		@include media-breakpoint-up( $bp ) {
+			min-height: rem( 4.6 );
+			font-size: 1.25rem;
+		}
+
+		a {
+			color: $dark;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $dark;
+
+				@include a-hover;
+			}
+		}
+	}
+
+	&__excerpt {
+		font-size: rem( 1.4 );
+		color: $accent-lightest;
+
+		@include media-breakpoint-up( $bp ) {
+			min-height: rem( 5.459 );
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 1rem 0 0;
+
+		a {
+			font-size: rem( 1.4 );
+			font-weight: 600;
+			color: $accent;
+
+			&:hover,
+			&:focus,
+			&:active {
+				outline: none;
+				text-decoration: none;
+				color: $accent;
+			}
+		}
+	}
+
+	&__views {
+		height: 1.5rem;
+		padding-left: rem( 2.8 );
+		background: url( '../images/eye.svg' ) no-repeat left center / 1.5rem;
+		font-size: rem( 1.2 );
+		line-height: 1.5rem;
+		color: $accent-lightest;
+	}
+}

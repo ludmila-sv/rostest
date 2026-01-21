@@ -1,0 +1,66 @@
+/* stylelint-disable no-duplicate-selectors */
+.wp-block-quote {
+	position: relative;
+
+	@include quote;
+
+	& {
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+		padding-left: rem( 5 );
+		border: none;
+
+		@include media-breakpoint-up( $bp ) {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			padding-left: rem( 5 );
+		}
+	}
+
+	&:before {
+		content: '\201c'; //201c 275d
+		position: absolute;
+		top: 0;
+		left: 0.5rem;
+		font-size: 5rem;
+		line-height: 1;
+	}
+
+	&.has-background {
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+		padding-right: 1.25rem;
+
+		&:before {
+			top: 1.25rem;
+		}
+	}
+
+	p {
+		@include quote;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	cite {
+		display: block;
+		margin: 0.5rem 0 0;
+		font-size: rem( 1.4 );
+		font-weight: 400;
+		line-height: 1.5;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0.8rem 0 0;
+		}
+	}
+}
+
+.content {
+	blockquote.wp-block-quote {
+		// @include content;
+
+		@include section-margin-small;
+	}
+}

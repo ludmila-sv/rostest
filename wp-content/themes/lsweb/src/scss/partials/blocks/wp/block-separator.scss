@@ -1,0 +1,21 @@
+.wp-block-separator {
+	border: none;
+	border-bottom: 1px solid $gray;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 1;
+
+	@include media-breakpoint-up( sm ) {
+		border-width: 0.0625rem;
+	}
+
+	&.is-style-wide {
+		border-bottom-width: 1px;
+
+		@include media-breakpoint-up( sm ) {
+			border-bottom-width: 0.0625rem;
+		}
+
+		// @include content;
+	}
+}

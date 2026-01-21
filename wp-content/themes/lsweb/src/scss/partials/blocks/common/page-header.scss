@@ -1,0 +1,117 @@
+/* stylelint-disable no-descending-specificity */
+.page-header {
+	margin: rem( 1 ) rem( -2 );
+	padding: rem( 5 ) 1.25rem rem( 4 );
+
+	@include media-breakpoint-up( $bp ) {
+		margin: rem( 1 ) 0;
+		padding: rem( 5 ) 2.5rem;
+		border-radius: rem( 0.7 );
+	}
+
+	&.full-width {
+		margin: 0;
+		padding: rem( 5 ) 0 rem( 4 );
+
+		@include media-breakpoint-up( $bp ) {
+			margin: rem( -7.2 ) 0 0;
+			padding: rem( 14.2 ) 0 rem( 7 );
+			border-radius: 0;
+		}
+	}
+
+	&.align-right {
+		@include media-breakpoint-up( $bp ) {
+			.container {
+				display: flex;
+				flex-flow: column;
+			}
+		}
+	}
+
+	.acf-block-preview & {
+		margin-top: 0;
+	}
+
+	&.bg-color-white {
+		background: $white;
+	}
+
+	&.bg-color-beige {
+		background: $beige-light;
+	}
+
+	&.bg-color-gray {
+		background: $light;
+	}
+
+	&.bg-color-brown {
+		background: $brown;
+		color: $white;
+	}
+
+	&.bg-color-dark {
+		background: $accent;
+		color: $white;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: rem( 2.8 );
+
+		@include media-breakpoint-up( $bp ) {
+			font-size: 2.5rem;
+		}
+
+		b,
+		strong {
+			font-weight: 400;
+			color: $beige-dark;
+		}
+	}
+
+	&__txt {
+		max-width: rem( 90.666 );
+		margin: 1.5rem 0 0;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 2.5rem 0 0;
+		}
+
+		.align-right & {
+			margin-left: auto;
+		}
+
+		.align-center & {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&.align-center {
+		text-align: center;
+	}
+
+	&.align-left {
+		text-align: left;
+	}
+
+	&.align-right {
+		text-align: right;
+	}
+}
+
+.content {
+	h1.page-header__title {
+		max-width: 100%;
+		margin: 0;
+	}
+}
+
+:where( .editor-styles-wrapper ) .is-layout-flow > .wp-block-acf-page-header.alignleft,
+:where( .editor-styles-wrapper ) .is-layout-flow > .wp-block-acf-page-header.alignright {
+	width: 100%;
+	float: none;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}

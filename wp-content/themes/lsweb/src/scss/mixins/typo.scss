@@ -1,0 +1,209 @@
+// typography mixins to be used to style all the h1-h6; p etc.
+@mixin h-1 {
+	font-family: $headings-font;
+	font-weight: 600;
+	font-size: rem( 4 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 5 );
+		letter-spacing: rem( -0.14 );
+		margin-bottom: 2rem;
+	}
+}
+
+@mixin h-2 {
+	font-family: $headings-font;
+	font-weight: 600;
+	font-size: rem( 2.8 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 4 );
+		margin-bottom: 1.25rem;
+	}
+}
+
+@mixin h-3 {
+	font-family: $headings-font;
+	font-weight: 600;
+	font-size: rem( 2 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 2.4 );
+		margin-bottom: 1rem;
+	}
+}
+
+@mixin h-4 {
+	font-family: $headings-font;
+	font-weight: 700;
+	font-size: rem( 1.6 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 2 );
+		margin-bottom: 1rem;
+	}
+}
+
+@mixin h-5 {
+	font-family: $headings-font;
+	font-weight: 700;
+	font-size: rem( 1.4 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 1.6 );
+		margin-bottom: 0.5rem;
+	}
+}
+
+@mixin h-6 {
+	font-family: $headings-font;
+	font-weight: 700;
+	font-size: rem( 1.2 );
+	line-height: 1.3;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 1.4 );
+		margin-bottom: 0.5rem;
+	}
+}
+
+// ----------------------------------- //
+
+@mixin body {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.3;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: 1rem;
+	}
+}
+
+@mixin body-2 {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: rem( 1.4 );
+	line-height: 1.5;
+	letter-spacing: 0;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 1.6 );
+	}
+}
+
+@mixin list {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.3;
+	letter-spacing: 0;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: 1rem;
+	}
+}
+
+@mixin lead {
+	font-family: $content-font;
+	font-weight: 300;
+	font-size: rem( 2 );
+	line-height: 1.4;
+	letter-spacing: 0;
+	margin-bottom: rem( 2.4 );
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: rem( 2.6 );
+		margin-bottom: rem( 3.2 );
+	}
+}
+
+@mixin quote {
+	font-family: $content-font;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.4;
+	letter-spacing: 0;
+	margin-bottom: 1rem;
+
+	@include media-breakpoint-up( $bp ) {
+		font-size: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+}
+
+@mixin subtitle-1 {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: rem( 1.6 );
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin-bottom: 0;
+}
+
+@mixin subtitle-2 {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: rem( 1.4 );
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 0;
+}
+
+@mixin button-1 {
+	font-family: $content-font;
+	font-weight: 600;
+	font-size: rem( 1.6 );
+	line-height: 1.25rem;
+	letter-spacing: 0;
+}
+
+@mixin button-2 {
+	font-family: $content-font;
+	font-weight: 600;
+	font-size: rem( 1.4 );
+	line-height: 1;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+@mixin caption {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: rem( 1.2 );
+	line-height: rem( 1.6 );
+	letter-spacing: 0;
+	margin-bottom: 0;
+}
+
+@mixin overline {
+	font-family: $content-font;
+	font-weight: 400;
+	font-size: rem( 1.2 );
+	line-height: rem( 1.6 );
+}
+
+@mixin a-hover {
+	outline: none;
+	border: none;
+	text-decoration: none;
+}

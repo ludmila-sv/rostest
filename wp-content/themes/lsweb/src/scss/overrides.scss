@@ -1,0 +1,36 @@
+@import 'functions';
+
+/* Load bootstrap with custom variables */
+
+$spacer: rem( 1 );
+$grid-gutter-width: rem( 1 );
+
+/* Override breakpoints as we need more for larger screens */
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	hd: 1420px,
+	xxl: 1800px,
+) !default;
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1090px,
+	hd: 1390px,
+	xxl: 1560px,
+) !default;
+
+// mobile menu breakpoint
+// then you can use `media-breakpoint-up($bp) or media-breakpoint-down($bp-down)` to make main breakpoint uniform.
+
+$bp: lg; // breakpoint variable used in media-breakpoint-up queries
+
+$bp-down: lg; // breakpoint variable used in media-breakpoint-down queries
+
+$bp-menu: lg;
+$bp-menu-down: lg;

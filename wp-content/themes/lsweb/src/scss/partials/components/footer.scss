@@ -1,0 +1,443 @@
+/* stylelint-disable no-descending-specificity */
+.footer {
+	margin-top: auto;
+	padding: rem( 4 ) 0 1rem;
+	background: $accent;
+	color: $white;
+
+	@include media-breakpoint-up( $bp ) {
+		padding: rem( 3 ) 0 rem( 1 );
+	}
+
+	.site-page__content--footer-round & {
+		position: relative;
+		border-radius: 1.25rem 1.25rem 0 0;
+
+		@include media-breakpoint-up( $bp ) {
+			border-radius: 2.5rem 2.5rem 0 0;
+		}
+	}
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+		}
+	}
+
+	&__top {
+		margin: 0 0 rem( 5 );
+
+		&.f-landing {
+			@include media-breakpoint-up( $bp ) {
+				display: flex;
+				justify-content: flex-start;
+				margin: 0 0 2rem;
+
+				> div {
+					flex: 0 0 33.3333%;
+
+					&:nth-child( 2 ) {
+						padding-left: rem( 10.8 );
+					}
+				}
+			}
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: rem( 27.7 );
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&.f-landing {
+			margin: 0 0 rem( 5 );
+
+			@include media-breakpoint-up( $bp ) {
+				margin: 0;
+			}
+		}
+	}
+
+	&__upper {
+		margin: 0 0 rem( 5 );
+	}
+
+	&__middle {
+		padding: 0 0 rem( 5 );
+		border-bottom: 1px solid $accent-variant;
+
+		@include media-breakpoint-up( sm ) {
+			border-width: rem( 0.1 );
+		}
+
+		@include media-breakpoint-up( $bp ) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			border: none;
+		}
+
+		&.f-landing {
+			@include media-breakpoint-up( $bp ) {
+				justify-content: flex-start;
+				padding: 0;
+
+				> div {
+					flex: 0 0 33.3333%;
+
+					&:nth-child( 1 ) {
+						padding-left: rem( 10.8 );
+					}
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		margin: 0 0 rem( 7 );
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 1 0 rem( 35 );
+			margin: 0;
+		}
+
+		&.f-landing {
+			margin: 0 0 rem( 5 );
+
+			@include media-breakpoint-up( $bp ) {
+				margin: 0;
+			}
+		}
+	}
+
+	&__contact {
+		&--mail {
+			margin: rem( 1.8 ) 0 0;
+		}
+
+		&__num {
+			font-size: rem( 2.8 );
+			font-weight: 400;
+			line-height: 1;
+			color: $light;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: rem( 4 );
+				line-height: 1.3;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $light;
+			}
+		}
+
+		&__mail {
+			font-size: rem( 2.8 );
+			font-weight: 400;
+			line-height: 1;
+			color: $light;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: rem( 2.4 );
+				line-height: 1.3;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $light;
+			}
+		}
+
+		&__txt {
+			margin: rem( 0.5 ) 0 0;
+			opacity: 0.7;
+			font-size: rem( 1.4 );
+			font-weight: 500;
+			line-height: 1;
+			color: $white;
+
+			@include media-breakpoint-up( $bp ) {
+				line-height: 1.3;
+			}
+
+			&.f-landing {
+				color: $accent-lighter;
+			}
+		}
+
+		&.f-landing {
+			@include media-breakpoint-up( $bp ) {
+				text-align: right;
+			}
+		}
+	}
+
+	&__menus {
+		@include media-breakpoint-up( $bp ) {
+			display: grid;
+			grid-template-columns: rem( 20 ) rem( 20 ) rem( 34 );
+			gap: rem( 7 );
+		}
+	}
+
+	&__col {
+		margin: 0 0 rem( 4 );
+
+		&:last-child {
+			margin: 0;
+		}
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 0 1 rem( 34 );
+			min-height: rem( 36.5 );
+			margin: 0;
+		}
+
+		&--3 {
+			@include media-breakpoint-up( $bp ) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&__title {
+			margin: 0 0 1rem;
+			font-size: 1rem;
+			font-weight: 600;
+			line-height: 1;
+			text-transform: uppercase;
+			color: $beige-dark;
+
+			@include media-breakpoint-up( $bp ) {
+				color: $white;
+			}
+
+			&--4 {
+				margin-top: 2.5rem;
+
+				@include media-breakpoint-up( $bp ) {
+					margin-top: 3rem;
+				}
+			}
+		}
+	}
+
+	&__menu {
+		&__ul {
+			.site-page & {
+				margin: 0;
+
+				li {
+					margin: 0 0 rem( 1 );
+					padding: 0;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					&:before {
+						display: none;
+					}
+
+					a {
+						font-size: 1rem;
+						font-weight: 500;
+						line-height: 1;
+
+						&:hover,
+						&:focus,
+						&:active {
+							color: $beige-dark;
+						}
+					}
+				}
+			}
+		}
+
+		&--light {
+			.footer__menu__ul {
+				opacity: 0.7;
+
+				li {
+					a {
+						font-size: rem( 1.2 );
+					}
+				}
+			}
+		}
+
+		&.f-landing {
+			margin: 0 0 rem( 5 );
+
+			@include media-breakpoint-up( $bp ) {
+				margin: 0;
+			}
+
+			.site-page & {
+				ul {
+					li {
+						line-height: 1;
+
+						a {
+							font-size: rem( 1.2 );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__license {
+		display: flex;
+		align-items: center;
+		margin: rem( 5 ) 0 0;
+		padding: rem( 2 );
+		background: $light;
+		border-radius: rem( 0.7 );
+
+		@include media-breakpoint-up( $bp ) {
+			width: rem( 34 );
+			margin: auto 0 0;
+		}
+
+		&__icon {
+			flex: 0 0 rem( 5.8 );
+			width: rem( 5.8 );
+			margin-right: rem( 1.5 );
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&__title {
+			position: relative;
+			margin: 0 0 0.5rem;
+			font-size: rem( 1.4 );
+			font-weight: 600;
+			line-height: 1;
+			color: $brown;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: rem( 0.3 );
+				right: 0.5rem;
+				width: 0.5rem;
+				height: 0.5rem;
+				background: url( '../images/arrow-up.svg' ) no-repeat center / 100%;
+				// transform: translateY( -50% );
+			}
+		}
+
+		&__txt {
+			opacity: 0.7;
+			font-size: rem( 1.4 );
+			font-weight: 600;
+			color: $dark;
+		}
+
+		&.d-desktop {
+			display: none;
+
+			@include media-breakpoint-up( $bp ) {
+				display: flex;
+			}
+		}
+	}
+
+	&__company {
+		font-size: rem( 1.4 );
+		color: $accent-lighter;
+
+		@include media-breakpoint-up( $bp ) {
+			order: 2;
+			color: $white;
+		}
+	}
+
+	&__address {
+		margin: rem( 5 ) 0 0;
+		font-size: rem( 1.4 );
+		color: $accent-lighter;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: rem( 4 ) 0 0;
+		}
+
+		&.f-landing {
+			margin: 1.5rem 0 0;
+			color: $white;
+
+			@include media-breakpoint-up( $bp ) {
+				margin: 0;
+			}
+		}
+	}
+
+	&__social {
+		margin: 2rem 0 0;
+	}
+
+	&__bottom {
+	}
+
+	&__design {
+		flex: 0 0 rem( 7.1 );
+		display: block;
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 0 0 rem( 8.1 );
+		}
+	}
+
+	&__copyright {
+		max-width: rem( 19.5 );
+		font-size: rem( 1 );
+		font-weight: 500;
+		color: $accent-lighter;
+
+		@include media-breakpoint-up( $bp ) {
+			max-width: none;
+			font-size: rem( 1.2 );
+		}
+
+		&.f-landing {
+			max-width: rem( 25 );
+			margin: 0 auto;
+			text-align: center;
+			color: $white;
+
+			@include media-breakpoint-up( $bp ) {
+				max-width: none;
+				margin: 0;
+				color: $accent-lighter;
+			}
+		}
+	}
+
+	&__slogan {
+		padding: rem( 1 ) 0 0;
+		opacity: 0.7;
+		font-weight: 400;
+		font-size: rem( 2.75 );
+		line-height: 1.3;
+		letter-spacing: rem( -0.06 );
+		text-transform: uppercase;
+		text-align: center;
+	}
+}

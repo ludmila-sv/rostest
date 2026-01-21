@@ -1,0 +1,60 @@
+/* stylelint-disable no-duplicate-selectors */
+.pagination {
+	margin: rem( 2.3 ) 0 0;
+
+	.nav-links {
+		margin: 0 auto;
+	}
+
+	.page-numbers {
+		display: inline-block;
+		vertical-align: middle;
+		width: 2.25rem;
+		height: 2.25rem;
+		border-radius: 50%;
+		font-size: rem( 1.2 );
+		font-weight: 500;
+		line-height: 2.25rem;
+		text-align: center;
+		text-decoration: none;
+		color: $dark;
+
+		&:hover,
+		&:focus,
+		&:active {
+			@include a-hover;
+
+			color: $dark;
+		}
+
+		&.current {
+			background: $brown;
+			color: $white;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $white;
+			}
+		}
+
+		&.prev,
+		&.next {
+			width: rem( 0.8 );
+			height: rem( 1.2 );
+			border-radius: 0;
+		}
+
+		&.next {
+			margin-left: rem( 2 );
+			background: url( '../images/components/chevron-right.svg' ) no-repeat right center;
+			background-size: 0.5rem 0.75rem;
+		}
+
+		&.prev {
+			margin-right: rem( 2 );
+			background: url( '../images/components/chevron-left.svg' ) no-repeat right center;
+			background-size: 0.5rem 0.75rem;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+/* stylelint-disable scss/dollar-variable-empty-line-before */
+
+/* Colors */
+
+$black: #000;
+$white: #fff;
+$white2: #f1f6ff;
+$white07: #b5b9cb;
+$dark: #252c3f;
+$dark07: #646977;
+$dark05: #8e929c;
+$dark04: #a7abb2;
+$dark41: #414141;
+$light: #f8f8fa;
+$dark-gray: #808080;
+$middle-gray: #b2b2b2; // old
+$light-gray: #ebebeb;
+$gray: #cecece;
+
+$accent: #081651;
+$accent-variant: #3a4574;
+$accent-light: #112269;
+$accent-lighter: #6e769c;
+$accent-lightest: #8e929c;
+$accent-transparent: rgba( 8, 22, 81, 0.7 );
+
+$green-light: #34c759;
+$yellow: #fc0;
+$blue-light: #caddff;
+$beige-dark: #af8e8e;
+$beige-light: #f0efea;
+$brown-light: #ceb1b1;
+$brown: #7b5b5b;
+$maroon: #800000;
+
+$semantic-warning: #faa614;
+$semantic-error: #b00020;
+$semantic-success: #008738;
+$semantic-info: #006bb2;
+
+$shadow: linear-gradient( 0deg, rgba( 0, 0, 0, 0.4 ), rgba( 0, 0, 0, 0.4 ) );
+
+$border: $middle-gray;
+$text: $dark;
+
+/* Fonts */
+$headings-font: 'Involve', sans-serif;
+$content-font: 'Involve', sans-serif;
+
+/* Other */
+
+/* Slick slider variables  See /src/scss/partials/components/slick.scss */
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: './fonts/' !default;
+$slick-font-family: 'slick' !default;
+$slick-loader-path: './' !default;
+$slick-arrow-color: $black !default;
+$slick-dot-color: $black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: '←' !default; // "\2190" !default;
+$slick-next-character: '→' !default; // "\2192" !default;
+$slick-dot-character: '*' !default;
+$slick-dot-size: 1.25rem !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+// Max content width for blog single posts
+$content: 60rem;
+$content-wide: rem( 106 );
+
+// header
+$header-height: rem( 6.2 );
+$header-landing-height: rem( 8.4 );
+$header-round-height: rem( 6.8 );
+
+// Common GBs
+$page-nav-height: rem( 6.4 );
+$page-nav-height-mob: rem( 5.6 );
+
+$screen-width: calc( 100vw - var( --scrollbar-width ) );

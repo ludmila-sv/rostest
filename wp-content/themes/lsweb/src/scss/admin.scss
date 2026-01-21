@@ -1,0 +1,31 @@
+/*
+* Here goes our Gutenberg Blocks embedded styles for ease of editing.
+*/
+@import 'overrides'; // load our grid custom breakpoints and override bootstrap's variables if needed
+
+// bootstrap's imported
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// our local styles and mixins
+
+@import 'variables'; // we load our own theme's variables after bootstrap's to make sure we override colors and  other stuff
+@import 'mixins/*'; // all our mixins are in directory separated by field of usage in files.
+//@import 'functions';
+@import 'partials/pages/blog-single';
+
+.table-view-list.posts .manage-column.column-title {
+	width: 400px;
+}
+
+.post-type-page .editor-styles-wrapper,
+.post-type-post .editor-styles-wrapper {
+	width: calc( 100% - 2rem ) !important;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.editor-styles-wrapper {
+	@include body;
+}

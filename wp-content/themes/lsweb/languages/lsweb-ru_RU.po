@@ -1,0 +1,1012 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lsweb v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-22 01:25+0300\n"
+"PO-Revision-Date: 2026-01-22 01:25+0300\n"
+"Last-Translator: \n"
+"Language-Team: lsweb <info@lsweb.ru>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-10\": includes/cpt.php\n"
+"X-Poedit-SearchPath-0: partials\n"
+"X-Poedit-SearchPath-1: .\n"
+"X-Poedit-SearchPath-2: index.php\n"
+"X-Poedit-SearchPath-3: includes/theme-customizations.php\n"
+"X-Poedit-SearchPath-4: includes/ajax.php\n"
+"X-Poedit-SearchPath-5: includes/styles-scripts.php\n"
+"X-Poedit-SearchPath-6: includes/acf-options.php\n"
+"X-Poedit-SearchPath-7: includes/acf-blocks.php\n"
+"X-Poedit-SearchPath-8: includes/gutenberg-customizations.php\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: .git\n"
+"X-Poedit-SearchPathExcluded-2: includes/wp-cli-acf-tools.php\n"
+
+#: 404.php:12
+msgid "404 error"
+msgstr "Ошибка 404"
+
+#: 404.php:13
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: 404.php:25
+msgid "Go Back Home"
+msgstr "Вернуться на главную"
+
+#: archive-doctors.php:53 includes/cpt.php:25
+msgid "All Doctors"
+msgstr "Все врачи"
+
+#: archive-doctors.php:76 archive-doctors.php:79
+msgid "Pagination"
+msgstr "Пагинация"
+
+#: archive-doctors.php:86
+msgid "Nothing found."
+msgstr "Ничего не найдено"
+
+#: header.php:49
+msgid "Site Logo"
+msgstr "Логотип"
+
+#: header.php:55 header.php:57
+msgid "Site Navigation"
+msgstr "Меню сайта"
+
+#: header.php:78
+msgid "Toggle Navigation"
+msgstr "Переключатель меню"
+
+#: includes/acf-blocks.php:16
+msgid "Hero"
+msgstr "Заглавный блок"
+
+#: includes/acf-blocks.php:17
+msgid ""
+"Hero block with a heading, some text, and a background image or a video."
+msgstr "Заглавный блок с заголовком, текстом, фоновым изображением или видео."
+
+#: includes/acf-blocks.php:44
+msgid "Page Header"
+msgstr "Заголовок страницы"
+
+#: includes/acf-blocks.php:72
+msgid "Page Header v.2"
+msgstr "Заголовок страницы v.2"
+
+#: includes/acf-blocks.php:100
+msgid "Pre-heading"
+msgstr "Текст над заголовком"
+
+#: includes/acf-blocks.php:128
+msgid "CTA"
+msgstr "Призыв к действию"
+
+#: includes/acf-blocks.php:156
+msgid "Advantages"
+msgstr "Преимущества"
+
+#: includes/acf-blocks.php:184
+msgid "Logos slider"
+msgstr "Слайдер логотипов"
+
+#: includes/acf-blocks.php:212
+msgid "Statistics"
+msgstr "Статистика"
+
+#: includes/acf-blocks.php:241
+msgid "Accordion"
+msgstr "Аккордеон"
+
+#: includes/acf-blocks.php:269 partials/blocks/common/tabs.php:44
+#: partials/blocks/common/tabs.php:49 partials/blocks/common/tabs2.php:44
+#: partials/blocks/common/tabs2.php:46
+msgid "Tabs"
+msgstr "Табы"
+
+#: includes/acf-blocks.php:270
+msgid "Tabs with the WYSIWYG editor for each tab"
+msgstr "Табы с редактором WYSIWYG для каждого таба"
+
+#: includes/acf-blocks.php:296
+msgid "Tabs GB"
+msgstr "Табы с Гутенберг блоками"
+
+#: includes/acf-blocks.php:297
+msgid "Tabs that allow to insert any GB into a tab."
+msgstr ""
+"Можно вставлять любые Гутенберг-блоки в каждый таб. Но здесь неизбежен "
+"content-shift при загрузке страницы."
+
+#: includes/acf-blocks.php:323
+msgid "Tab"
+msgstr "Таб (содержимое)"
+
+#: includes/acf-blocks.php:324
+msgid "One Tab for the Tabs block."
+msgstr "Внутренний таб для блока Табы."
+
+#: includes/acf-blocks.php:344 partials/blocks/common/slider.php:38
+msgid "Slider"
+msgstr "Слайдер"
+
+#: includes/acf-blocks.php:371
+msgid "Slide"
+msgstr "Слайд"
+
+#: includes/acf-blocks.php:372
+msgid "Slide used inside slider block"
+msgstr "Слайд для слайдера"
+
+#: includes/acf-blocks.php:393 partials/blocks/common/video.php:40
+msgid "Video"
+msgstr "Видео"
+
+#: includes/acf-blocks.php:421
+msgid "Audio Button"
+msgstr "Аудио кнопка"
+
+#: includes/acf-blocks.php:449
+msgid "Image & Text"
+msgstr "Картинка и текст"
+
+#: includes/acf-blocks.php:476
+msgid "Full-Width Image&Text"
+msgstr "Широкий блок с картинкой и текстом"
+
+#: includes/acf-blocks.php:503
+msgid "Text Block"
+msgstr "Текстовой блок"
+
+#: includes/acf-blocks.php:504
+msgid "Text on Colored Background"
+msgstr "Текст на цветном фоне"
+
+#: includes/acf-blocks.php:530
+msgid "In-Page Navigation"
+msgstr "Меню, встроенное в текст страницы"
+
+#: includes/acf-blocks.php:531
+msgid "Navigation that sticks to the top when the page is scrolled below it."
+msgstr "При прокрутке страницы меню прилипает наверху."
+
+#: includes/acf-blocks.php:558
+msgid "Colored Background"
+msgstr "Цветной фон"
+
+#: includes/acf-blocks.php:559
+msgid "Allows to add a background to any block"
+msgstr "Добавляет цветной фон к любому блоку"
+
+#: includes/acf-blocks.php:576
+msgid "Fixed Width"
+msgstr "Фиксированная ширина"
+
+#: includes/acf-blocks.php:577
+msgid "Fixed width content (wysiwyg)"
+msgstr "Контент фиксированной ширины."
+
+#: includes/acf-blocks.php:594
+msgid "Full Width"
+msgstr "На всю ширину"
+
+#: includes/acf-blocks.php:595
+msgid "Full width content for posts."
+msgstr "Контент на всю ширину."
+
+#: includes/acf-blocks.php:612
+msgid "Custom css"
+msgstr "Пользовательские стили"
+
+#: includes/acf-blocks.php:613
+msgid "Custom styles for the page."
+msgstr "Пользовательские стили для текущей страницы."
+
+#: includes/acf-enhancements.php:41
+msgid "Site GB"
+msgstr "Блоки сайта"
+
+#: includes/acf-enhancements.php:45
+msgid "Custom GB"
+msgstr "Пользовательские GB"
+
+#: includes/acf-options.php:18 includes/acf-options.php:19
+msgid "Theme Settings"
+msgstr "Настройки темы"
+
+#: includes/acf-options.php:31 includes/acf-options.php:32
+msgid "Header"
+msgstr "Шапка"
+
+#: includes/acf-options.php:39 includes/acf-options.php:40
+msgid "Footer"
+msgstr "Подвал"
+
+#: includes/ajax.php:22 includes/ajax.php:23
+msgid "Order consultation"
+msgstr "Заказать консультацию"
+
+#: includes/ajax.php:23
+msgid "Name: "
+msgstr "Имя: "
+
+#: includes/ajax.php:23
+msgid "Telephone: "
+msgstr "Телефон: "
+
+#: includes/class-clean-walker.php:36
+msgid "Submenu for:"
+msgstr "Подменю для:"
+
+#: includes/class-clean-walker.php:156 includes/class-clean-walker.php:187
+msgid "Toggle submenu for"
+msgstr "Переключатель подменю для"
+
+#: includes/cpt.php:16 includes/cpt.php:17 includes/cpt.php:19
+msgid "Doctor"
+msgstr "Врач"
+
+#: includes/cpt.php:18
+msgid "Doctors"
+msgstr "Врачи"
+
+#: includes/cpt.php:20
+msgid "Add New Doctor"
+msgstr "Добавить врача"
+
+#: includes/cpt.php:21
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/cpt.php:22
+msgid "New Doctor"
+msgstr "Новый врач"
+
+#: includes/cpt.php:23
+msgid "Edit Doctor"
+msgstr "Редактировать врача"
+
+#: includes/cpt.php:24
+msgid "View Doctor"
+msgstr "Посмотреть врача"
+
+#: includes/cpt.php:26
+msgid "Search Doctor"
+msgstr "Искать во врачах"
+
+#: includes/cpt.php:27
+msgid "Parent Doctor"
+msgstr "Родительский врач"
+
+#: includes/cpt.php:28
+msgid "No Doctors"
+msgstr "Врачи не найдены"
+
+#: includes/cpt.php:29
+msgid "No Doctors found in Trash."
+msgstr "В корзине врачей нет."
+
+#: includes/cpt.php:56 includes/cpt.php:57
+msgid "Specialization"
+msgstr "Специализация"
+
+#: includes/cpt.php:58
+msgid "Search Specialization"
+msgstr "Искать в специализациях"
+
+#: includes/cpt.php:59
+msgid "All Specializations"
+msgstr "Все специализации"
+
+#: includes/cpt.php:60 includes/cpt.php:61
+msgid "Parent Specialization"
+msgstr "Родительская специализация"
+
+#: includes/cpt.php:62
+msgid "Edit Specialization"
+msgstr "Редактировать специализацию"
+
+#: includes/cpt.php:63
+msgid "Update Specialization"
+msgstr "Обновить специализацию"
+
+#: includes/cpt.php:64
+msgid "Add New Specialization"
+msgstr "Добавить специализацию"
+
+#: includes/cpt.php:65
+msgid "New Specialization"
+msgstr "Новая специализация"
+
+#: includes/cpt.php:66
+msgid "Specializations"
+msgstr "Специализации"
+
+#: includes/cpt.php:67
+msgid "No Specializations"
+msgstr "Специализаций не найдено"
+
+#: includes/cpt.php:87 includes/cpt.php:88
+msgid "City"
+msgstr "Город"
+
+#: includes/cpt.php:89
+msgid "Search Cities"
+msgstr "Поиск по городам"
+
+#: includes/cpt.php:90
+msgid "All Cities"
+msgstr "Все города"
+
+#: includes/cpt.php:91 includes/cpt.php:92
+msgid "Parent City"
+msgstr "Родительский город"
+
+#: includes/cpt.php:93
+msgid "Edit City"
+msgstr "Редактировать город"
+
+#: includes/cpt.php:94
+msgid "Update City"
+msgstr "Обновить город"
+
+#: includes/cpt.php:95
+msgid "Add New City"
+msgstr "Добавить новый город"
+
+#: includes/cpt.php:96
+msgid "New City"
+msgstr "Новый город"
+
+#: includes/cpt.php:97
+msgid "Cities"
+msgstr "Города"
+
+#: includes/cpt.php:98
+msgid "No Cities"
+msgstr "Городов не найдено"
+
+#: includes/gutenberg-customizations.php:22
+msgid "Lead"
+msgstr "Крупный"
+
+#: includes/gutenberg-customizations.php:26
+msgid "Caption"
+msgstr "Подпись"
+
+#: includes/gutenberg-customizations.php:30
+msgid "Overline"
+msgstr "Над заголовком"
+
+#: includes/gutenberg-customizations.php:34
+msgid "Narrow"
+msgstr "Узкий"
+
+#: includes/gutenberg-customizations.php:38
+msgid "Narrow 24px"
+msgstr "Узкий 24px"
+
+#: includes/gutenberg-customizations.php:45
+msgid "Primary"
+msgstr "Стиль 1"
+
+#: includes/gutenberg-customizations.php:49
+msgid "Secondary"
+msgstr "Стиль 2"
+
+#: includes/gutenberg-customizations.php:53
+msgid "Tertiary (Link)"
+msgstr "Стиль 3"
+
+#: includes/gutenberg-customizations.php:60
+msgid "Checked"
+msgstr "С галочкой"
+
+#: includes/gutenberg-customizations.php:64
+msgid "Checked in Circle"
+msgstr "Галочка в кружочке"
+
+#: includes/gutenberg-customizations.php:68
+msgid "Light"
+msgstr "Светлый"
+
+#: includes/styles-scripts.php:71
+msgid "Loading..."
+msgstr "Загрузка…"
+
+#: includes/styles-scripts.php:72
+msgid "Stop Video"
+msgstr "Остановить видео"
+
+#: includes/styles-scripts.php:73
+msgid "Gallery Image"
+msgstr "Изображение галереи"
+
+#: includes/theme-customizations.php:30
+msgid "Header Menu"
+msgstr "Шапка"
+
+#: includes/theme-customizations.php:31
+msgid "Footer Menu"
+msgstr "Меню в подвале"
+
+#: index.php:22
+msgid "Category"
+msgstr "Категория"
+
+#: index.php:24 index.php:29
+msgid "All Posts"
+msgstr "Все посты"
+
+#: index.php:28
+msgid "Search results for:"
+msgstr "Результаты поиска для:"
+
+#: index.php:42
+msgid "By Category"
+msgstr "По категории"
+
+#: index.php:50
+msgid "Filter"
+msgstr "Фильтр"
+
+#: index.php:79
+msgid "Blog pagination"
+msgstr "Страницы блога"
+
+#: index.php:89
+msgid "There are no results for this search. Please try again."
+msgstr "Ничего не найдено. Попробуйте поискать ещё раз."
+
+#: index.php:93
+msgid "No posts in this category."
+msgstr "На эту тему постов нет."
+
+#: index.php:97
+msgid "Blog content is comming soon."
+msgstr "Посты скоро появятся. Заходите позже."
+
+#: partials/blocks/common/audio.php:29
+msgid "Play/Stop Audio"
+msgstr "Воспроизвести/Остановить аудио"
+
+#: partials/blocks/common/slider.php:44
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: partials/blocks/common/slider.php:45
+msgid "Next"
+msgstr "Следующий"
+
+#: partials/blocks/common/video.php:54 partials/blocks/common/video.php:57
+#: partials/blocks/common/video.php:87
+msgid "Play Video"
+msgstr "Включить видео"
+
+#: partials/callbackform.php:30
+msgctxt "callback"
+msgid "Phone"
+msgstr "Телефон"
+
+#: partials/callbackform.php:34
+msgctxt "callback"
+msgid "Email"
+msgstr "Email"
+
+#: partials/callbackform.php:38
+msgctxt "callback"
+msgid "Name"
+msgstr "Имя"
+
+#: partials/callbackform.php:44
+msgctxt "callback"
+msgid "Submit"
+msgstr "Отправить"
+
+#: partials/callbackform.php:52
+msgid ""
+"I accept&nbsp; <a>Terms and Conditions</a> &nbsp;and agree to receive "
+"marketing letters that can be interesting for me."
+msgstr ""
+"Я принимаю&nbsp; <a>Условия использования</a>&nbsp; и соглашаюсь получать "
+"маркетинговые письма, которые могут быть интересными для меня."
+
+#: partials/category-filter.php:10 partials/category-filter.php:23
+msgid "All Categories"
+msgstr "Все категории"
+
+#: partials/doctor-card.php:21 single-doctors.php:22
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s год"
+msgstr[1] "%s года"
+msgstr[2] "%s лет"
+
+#: partials/doctor-card.php:28 partials/post.php:19
+msgid "Main post image"
+msgstr "Заглавная картинка поста"
+
+#: partials/doctor-card.php:45 single-doctors.php:51
+msgid "Doctor's specialization"
+msgstr "Специализация врача"
+
+#: partials/doctor-card.php:73 single-doctors.php:87
+msgid "experience"
+msgstr "опыт"
+
+#: partials/doctor-card.php:81 single-doctors.php:95
+msgid "price"
+msgstr "цена"
+
+#: partials/doctor-card.php:90 single-doctors.php:104
+msgid "rating"
+msgstr "рейтинг"
+
+#: partials/doctor-card.php:99 single-doctors.php:113
+msgid "Doctor's city"
+msgstr "Город"
+
+#: partials/doctor-card.php:126 partials/post.php:35
+msgid "Read more"
+msgstr "Читать далее"
+
+#: partials/doctors-filter.php:35
+msgid "Choose Specialization"
+msgstr "Выберите специализацию"
+
+#: partials/doctors-filter.php:53
+msgid "Choose City"
+msgstr "Выберите город"
+
+#: partials/doctors-filter.php:69
+msgid "Sort By"
+msgstr "Сортировать по"
+
+#: partials/doctors-filter.php:70
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: partials/doctors-filter.php:71
+msgid "Price"
+msgstr "Цена"
+
+#: partials/doctors-filter.php:72
+msgid "Experience"
+msgstr "Опыт"
+
+#: partials/doctors-filter.php:78
+msgid "Show"
+msgstr "Показать"
+
+#: partials/post.php:36 single.php:44
+msgid "views:"
+msgstr "просмотров:"
+
+#: single.php:31
+msgid "Categories"
+msgstr "Рубрики"
+
+#~ msgid "All Courses"
+#~ msgstr "Все курсы"
+
+#~ msgid "All Seminars"
+#~ msgstr "Все семинары"
+
+#~ msgid "Tags"
+#~ msgstr "Тэги"
+
+#~ msgid "Related Posts"
+#~ msgstr "Похожие записи"
+
+#~ msgid "All posts"
+#~ msgstr "Все посты"
+
+#, fuzzy
+#~| msgid "All Product Categories"
+#~ msgid "All Doctor Cities"
+#~ msgstr "Все категории"
+
+#~ msgid "Hero with Menu"
+#~ msgstr "Заглавный блок с меню"
+
+#~ msgid "Hero Simple"
+#~ msgstr "Простой заглавный блок"
+
+#~ msgid "Gallery"
+#~ msgstr "Галерея"
+
+#~ msgid "Gallery v.2"
+#~ msgstr "Галерея v.2"
+
+#~ msgid "Gallery v.3"
+#~ msgstr "Галерея v.3"
+
+#~ msgid "Masonry Layout"
+#~ msgstr "Кирпичная кладка"
+
+#~ msgid "Numbered Blocks"
+#~ msgstr "Нумерованные блоки"
+
+#~ msgid "Numbered Blocks whith Link"
+#~ msgstr "Нумерованные блоки со ссылкой"
+
+#~ msgid "Numbered Blocks v.3"
+#~ msgstr "Нумерованные блоки v.3"
+
+#~ msgid "Numbered Blocks v.4"
+#~ msgstr "Нумерованные блоки v.4"
+
+#~ msgid "Numbered Blocks v.5"
+#~ msgstr "Нумерованные блоки v.5"
+
+#~ msgid "Text in 2 columns"
+#~ msgstr "Текст в 2 колонки"
+
+#~ msgid "Text in 2 columns v.2"
+#~ msgstr "Текст в 2 колонки v.2"
+
+#~ msgid "Documents"
+#~ msgstr "Документы"
+
+#~ msgid "Quote"
+#~ msgstr "Цитата"
+
+#~ msgid "Video Slider"
+#~ msgstr "Видео-слайдер"
+
+#~ msgid "Video Materials"
+#~ msgstr "Видео материалы"
+
+#~ msgid "Files Download"
+#~ msgstr "Загрузить файлы"
+
+#~ msgid "Staff"
+#~ msgstr "Преподаватели"
+
+#~ msgid "Staff List"
+#~ msgstr "Все преподаватели"
+
+#~ msgid "Courses"
+#~ msgstr "Курсы"
+
+#~ msgid "Seminars"
+#~ msgstr "Семинары"
+
+#~ msgid "Past Seminars"
+#~ msgstr "Прошедшие семинары"
+
+#~ msgid "Dialogs"
+#~ msgstr "Диалоги"
+
+#~ msgid "Advantages v.2"
+#~ msgstr "Преимущества v.2"
+
+#~ msgid "List & Media v.1"
+#~ msgstr "Список и медиа v.1"
+
+#~ msgid "List & Media v.2"
+#~ msgstr "Список и медиа v.2"
+
+#~ msgid "Columns"
+#~ msgstr "Колонки"
+
+#~ msgid "Columns & mobile slider"
+#~ msgstr "Колонки - слайдер на мобильном"
+
+#~ msgid "Two Columns & Mobile Slider"
+#~ msgstr "Две колонки - слайдер на мобильном"
+
+#~ msgid "Materials"
+#~ msgstr "Материалы"
+
+#~ msgid "Document"
+#~ msgstr "Документ"
+
+#~ msgid "Price-mini"
+#~ msgstr "Цены (сокращенная версия)"
+
+#~ msgid "List with Years"
+#~ msgstr "Список с годами"
+
+#~ msgid "Featured Programs"
+#~ msgstr "Избранные программы"
+
+#~ msgid "Free Programs"
+#~ msgstr "Бесплатные программы"
+
+#~ msgid "Reviews"
+#~ msgstr "Отзывы"
+
+#~ msgid "Yandex Reviews"
+#~ msgstr "Отзывы с Yandex"
+
+#~ msgid "Icon & Text"
+#~ msgstr "Иконка и текст"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакты"
+
+#~ msgid "Timetable"
+#~ msgstr "Расписание"
+
+#~ msgid "Lessons"
+#~ msgstr "Уроки"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Form"
+#~ msgstr "Форма"
+
+#~ msgid "Video & Text"
+#~ msgstr "Видео и текст"
+
+#~ msgid "Grid"
+#~ msgstr "Плитка"
+
+#~ msgid "Staff member"
+#~ msgstr "Преподаватель"
+
+#~ msgid "A staff member"
+#~ msgstr "Преподавателя"
+
+#~ msgid "Add New"
+#~ msgstr "Добавить"
+
+#~ msgid "New Staff member"
+#~ msgstr "Новый преподаватель"
+
+#~ msgid "Edit Staff member"
+#~ msgstr "Редактировать преподавателя"
+
+#~ msgid "View Staff member"
+#~ msgstr "Посмотреть преподавателя"
+
+#~ msgid "All Staff members"
+#~ msgstr "Все преподаватели"
+
+#~ msgid "Search Staff"
+#~ msgstr "Поиск преподавателя"
+
+#~ msgid "Parent Staff"
+#~ msgstr "Родительский преподаватель"
+
+#~ msgid "Not found in Trash."
+#~ msgstr "В корзине ничего не найдено."
+
+#~ msgid "Course"
+#~ msgstr "Курс"
+
+#~ msgid "Add New Course"
+#~ msgstr "Добавить новый курс"
+
+#~ msgid "New Course"
+#~ msgstr "Новый курс"
+
+#~ msgid "Edit Course"
+#~ msgstr "Редактировать курс"
+
+#~ msgid "View Course"
+#~ msgstr "Посмотреть курс"
+
+#~ msgid "Parent Course"
+#~ msgstr "Родительский курс"
+
+#~ msgid "No Courses"
+#~ msgstr "Курсов не найдено"
+
+#~ msgid "Course Categories"
+#~ msgstr "Категории курсов"
+
+#~ msgid "Course Category"
+#~ msgstr "Категория курсов"
+
+#~ msgid "Search Course Category"
+#~ msgstr "Искать в категориях курсов"
+
+#~ msgid "All Course Categories"
+#~ msgstr "Все категории курсов"
+
+#~ msgid "Course Document"
+#~ msgstr "Документ курса"
+
+#~ msgid "Search Course Documents"
+#~ msgstr "Поиск по документам"
+
+#~ msgid "All Course Documents"
+#~ msgstr "Все документы курсов"
+
+#~ msgid "Course Documents"
+#~ msgstr "Документы курсов"
+
+#~ msgid "Course Format"
+#~ msgstr "Формат курса"
+
+#~ msgid "Search Course Formats"
+#~ msgstr "Поиск по форматам курсов"
+
+#~ msgid "All Course Formats"
+#~ msgstr "Все форматы курсов"
+
+#~ msgid "Parent Format"
+#~ msgstr "Родительский фромат"
+
+#~ msgid "Course Formats"
+#~ msgstr "Форматы курсов"
+
+#~ msgid "Course Level"
+#~ msgstr "Уровень курса"
+
+#~ msgid "Search Course Levels"
+#~ msgstr "Искать по уровням курсов"
+
+#~ msgid "All Course Levels"
+#~ msgstr "Все уровни курсов"
+
+#~ msgid "Course Levels"
+#~ msgstr "Уровни курсов"
+
+#~ msgid "Seminar"
+#~ msgstr "Семинар"
+
+#~ msgid "New Seminar"
+#~ msgstr "Новый семинар"
+
+#~ msgid "Edit Seminar"
+#~ msgstr "Редактировать семинар"
+
+#~ msgid "View Seminar"
+#~ msgstr "Посмотреть семинар"
+
+#~ msgid "Search Seminar"
+#~ msgstr "Поиск семинара"
+
+#~ msgid "No Seminars"
+#~ msgstr "Семинары не найдены"
+
+#~ msgid "No Seminars found in Trash."
+#~ msgstr "В корзине семинаров нет."
+
+#~ msgid "Seminar Types"
+#~ msgstr "Типы семинаров"
+
+#~ msgid "Seminar Type"
+#~ msgstr "Тип семинара"
+
+#~ msgid "Search Seminar Type"
+#~ msgstr "Искать тип семинара"
+
+#~ msgid "All Seminar Types"
+#~ msgstr "Все типы семинаров"
+
+#~ msgid "Seminar Categories"
+#~ msgstr "Категории семинаров"
+
+#~ msgid "Seminar Category"
+#~ msgstr "Категория семинаров"
+
+#~ msgid "Search Seminar Category"
+#~ msgstr "Искать в категориях семинаров"
+
+#~ msgid "All Seminar Categories"
+#~ msgstr "Все категории семинаров"
+
+#~ msgid "Seminar Level"
+#~ msgstr "Уровень семинара"
+
+#~ msgid "Search Seminar Levels"
+#~ msgstr "Искать по уровням семинаров"
+
+#~ msgid "All Seminar Levels"
+#~ msgstr "Все уровни семинаров"
+
+#~ msgid "Seminar Levels"
+#~ msgstr "Уровни семинаров"
+
+#~ msgid "Footer Menu 2"
+#~ msgstr "Меню в подвале 2"
+
+#~ msgid "Footer Menu 3"
+#~ msgstr "Меню в подвале 3"
+
+#~ msgid "Footer Menu 4"
+#~ msgstr "Меню в подвале 4"
+
+#~ msgid "Homepage"
+#~ msgstr "Главная"
+
+#~ msgid "Blog"
+#~ msgstr "Блог"
+
+#~ msgid "Search Results"
+#~ msgstr "Результаты поиска"
+
+#~ msgid "Item"
+#~ msgstr "Пункт"
+
+#~ msgid "Original Image"
+#~ msgstr "Оригинал изображения"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "Comment Submission Failure"
+#~ msgstr "Ошибка при отправке отзыва"
+
+#~ msgid "Your review is waiting for approval."
+#~ msgstr "Ваш отзыв ожидает проверки."
+
+#~ msgid "Your review is submitted. It will be published soon."
+#~ msgstr "Ваш отзыв отправлен. Скоро он будет опубликован."
+
+#~ msgid "Sending"
+#~ msgstr "Отправка"
+
+#~ msgid "An error occured white sending the review."
+#~ msgstr "Ошибка при отправке сообщения."
+
+#~ msgid "Server is not responding. Try again later."
+#~ msgstr "Сервер не отвечает. Повторите попытку позже."
+
+#~ msgid "Popup with a contact form."
+#~ msgstr "Попал с контактной формой."
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Course Types"
+#~ msgstr "Типы курсов"
+
+#~ msgid "Course Type"
+#~ msgstr "Тип курсов"
+
+#~ msgid "Subtitle-1"
+#~ msgstr "Подзаголовок 1"
+
+#~ msgid "Subtitle-2"
+#~ msgstr "Подзаголовок 2"
+
+#~ msgid "Product"
+#~ msgstr "Продукт"
+
+#~ msgid "Products"
+#~ msgstr "Продукты"
+
+#~ msgid "All Products"
+#~ msgstr "Все продукты"
+
+#~ msgid "Parent Product"
+#~ msgstr "Родительский продукт"
+
+#~ msgid "No Products"
+#~ msgstr "Продукты отсутствуют"
+
+#~ msgid "Product Types"
+#~ msgstr "Типы"
+
+#~ msgid "Product Type"
+#~ msgstr "Тип"
+
+#~ msgid "Product Category"
+#~ msgstr "Категория"
+
+#~ msgid "Product Document"
+#~ msgstr "Документ"
+
+#~ msgid "Product Format"
+#~ msgstr "Формат"
+
+#~ msgid "Product Levels"
+#~ msgstr "Уровни"

@@ -1,0 +1,100 @@
+.header {
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	height: $header-height;
+	background: $accent;
+	color: $white;
+
+	@include media-breakpoint-up( $bp ) {
+		margin: rem( 1 ) 0 0;
+		background: transparent; // $light;
+	}
+
+	&.header--landing {
+		@include media-breakpoint-up( $bp ) {
+			height: $header-landing-height;
+			margin: 0;
+			background: $accent;
+		}
+	}
+
+	&.header--round {
+		border-radius: 0 0 rem( 2 ) rem( 2 );
+
+		@include media-breakpoint-up( $bp ) {
+			height: $header-round-height;
+			margin: rem( 1 ) 0 0;
+			background: transparent;
+			border-radius: 0;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: rem( 0.7 ) 0;
+		border-radius: rem( 0.7 );
+
+		@include media-breakpoint-up( $bp ) {
+			padding: rem( 0.7 ) rem( 2 );
+			background: $accent;
+		}
+
+		.header--landing & {
+			@include media-breakpoint-up( $bp ) {
+				padding: rem( 1.8 ) 0;
+				background: transparent;
+			}
+		}
+
+		.header--round & {
+			@include media-breakpoint-up( $bp ) {
+				padding: rem( 1 ) rem( 3 ) rem( 1 ) rem( 1 );
+				background: $accent;
+				border-radius: rem( 3.4 );
+			}
+		}
+	}
+
+	&__logo {
+		display: block;
+		height: rem( 3.1 );
+		margin-right: 1rem;
+
+		@include media-breakpoint-up( $bp ) {
+			height: 3rem;
+		}
+
+		img {
+			display: block;
+			width: auto;
+			height: 100%;
+		}
+	}
+
+	&__phone {
+		display: none;
+		font-size: rem( 1.4 );
+		font-weight: 500;
+		color: $white;
+
+		@include media-breakpoint-up( $bp ) {
+			display: inline;
+			margin-left: rem( 7.5 );
+			font-size: 1rem;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+		}
+	}
+
+	&__txt { // landing
+		font-size: rem( 1 );
+		text-align: right;
+	}
+}

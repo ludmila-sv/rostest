@@ -1,0 +1,271 @@
+.img-txt {
+	margin: rem( 3 ) 0;
+
+	@include media-breakpoint-up( $bp ) {
+		margin: rem( 5 ) 0;
+
+		&.img-txt--line {
+			overflow: hidden;
+			margin: 0;
+			padding: rem( 1 ) 0;
+
+			.middle-line {
+				top: rem( -1 );
+				bottom: rem( -1 );
+			}
+
+			&.first-of-type {
+				.middle-line {
+					top: 0;
+				}
+			}
+		}
+	}
+
+	&.bg-color-white {
+		background: $white;
+	}
+
+	&.bg-color-beige {
+		background: $beige-light;
+	}
+
+	&.bg-color-gray {
+		background: $light;
+	}
+
+	&.bg-color-brown {
+		background: $brown;
+		color: $white;
+	}
+
+	&.bg-color-dark {
+		background: $accent;
+		color: $white;
+	}
+
+	&.img-align-right {
+		.row {
+			@include media-breakpoint-up( $bp ) {
+				flex-flow: row-reverse;
+			}
+		}
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&__img {
+		overflow: hidden;
+		margin: 0 0 rem( 2.4 );
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0;
+		}
+
+		&--caption {
+			position: relative;
+
+			@include media-breakpoint-up( $bp ) {
+				height: 100%;
+				margin-right: 5rem;
+			}
+		}
+
+		&__inner {
+			@include media-breakpoint-up( $bp ) {
+				position: relative;
+				overflow: hidden;
+				height: 100%;
+				margin: 0 5rem 0 0;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: rem( -5.8 );
+				left: rem( -5.8 );
+				z-index: 10;
+				width: rem( 11.6 );
+				height: rem( 11.6 );
+				transform: rotate( 45deg );
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: rem( -5.8 );
+				right: rem( -5.8 );
+				z-index: 10;
+				width: rem( 11.6 );
+				height: rem( 11.6 );
+				transform: rotate( 45deg );
+			}
+
+			&:before,
+			&:after {
+				background: $light;
+
+				.bg-color-white & {
+					background: $white;
+				}
+
+				.bg-color-beige & {
+					background: $beige-light;
+				}
+
+				.bg-color-gray & {
+					background: $light;
+				}
+
+				.bg-color-brown & {
+					background: $brown;
+				}
+
+				.bg-color-dark & {
+					background: $accent;
+				}
+			}
+
+			.img-txt__img--caption--simple & {
+				&:before {
+					display: none;
+
+					@include media-breakpoint-up( $bp ) {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&__caption {
+			position: absolute;
+			overflow: hidden;
+			right: 0;
+			bottom: 1.25rem;
+			z-index: 20;
+			width: 85%;
+			padding: 1.25rem;
+			background: $accent-transparent;
+			color: $white;
+
+			@include media-breakpoint-up( $bp ) {
+				padding: 1.25rem rem( 3 );
+
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: rem( -2.8 );
+					right: rem( -2.8 );
+					z-index: 10;
+					width: rem( 5.657 );
+					height: rem( 5.657 );
+					background: $light;
+					transform: rotate( 45deg );
+
+					.bg-color-white & {
+						background: $white;
+					}
+
+					.bg-color-beige & {
+						background: $beige-light;
+					}
+
+					.bg-color-gray & {
+						background: $light;
+					}
+
+					.bg-color-brown & {
+						background: $brown;
+					}
+
+					.bg-color-dark & {
+						background: $accent;
+					}
+				}
+			}
+
+			.img-txt__img--caption--simple & {
+				position: static;
+				width: 100%;
+
+				@include media-breakpoint-up( $bp ) {
+					position: absolute;
+					width: 85%;
+
+					&:before {
+						display: block;
+					}
+				}
+			}
+
+			&__title {
+				margin: 0 0 0.5rem;
+				font-size: 1.25rem;
+				font-weight: 400;
+			}
+
+			&__txt {
+				font-size: rem( 1.4 );
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+
+			@include media-breakpoint-up( $bp ) {
+				height: 100%;
+				object-fit: cover;
+				font-family: 'object-fit: cover;';
+			}
+		}
+	}
+
+	&__txt {
+		@include media-breakpoint-up( $bp ) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+			padding: 0 2rem;
+
+			h2,
+			h3 {
+				margin-bottom: 2rem;
+			}
+
+			p {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.content & {
+			p,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			ol,
+			ul,
+			.wp-block-buttons {
+				max-width: none;
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		&--justify {
+			@include media-breakpoint-up( $bp ) {
+				text-align: justify;
+			}
+		}
+	}
+}

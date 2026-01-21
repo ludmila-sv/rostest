@@ -1,0 +1,7 @@
+blockquote {
+	@extend .wp-block-quote;
+
+	cite {
+		text-transform: none;
+	}
+}

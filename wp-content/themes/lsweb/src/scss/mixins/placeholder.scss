@@ -1,0 +1,11 @@
+@mixin placeholder {
+	&::placeholder {
+		font-weight: 400 !important;
+		color: $light-gray;
+		transition: opacity 0.3s ease-out;
+	}
+
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}

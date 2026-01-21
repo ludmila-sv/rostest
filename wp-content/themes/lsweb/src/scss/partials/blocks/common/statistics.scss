@@ -1,0 +1,84 @@
+.statistics {
+	@include section-margin;
+
+	&__title {
+		margin: 0 0 1.25rem;
+		text-align: center;
+
+		@include media-breakpoint-up( $bp ) {
+			margin: 0 0 rem( 5 );
+		}
+
+		b {
+			font-weight: 400;
+			color: $beige-dark;
+		}
+	}
+
+	&__list {
+		@include media-breakpoint-up( $bp ) {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			justify-content: center;
+			margin: 0 rem( -0.5 );
+		}
+	}
+
+	&__item {
+		margin-bottom: rem( 1 );
+
+		@include media-breakpoint-up( $bp ) {
+			flex: 0 0 25%;
+			margin-bottom: 0;
+			padding: 0 rem( 0.5 );
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__inner {
+			height: 100%;
+			padding: 1.25rem;
+			border: 1px solid $gray;
+			border-radius: rem( 0.7 );
+
+			@include media-breakpoint-up( sm ) {
+				border-width: rem( 0.1 );
+			}
+
+			@include media-breakpoint-up( $bp ) {
+				padding: 1.25rem rem( 3 );
+			}
+		}
+
+		&__stat {
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-start;
+			margin: 0 0 0.625rem;
+		}
+
+		&__num {
+			font-size: 3.75rem;
+			font-weight: 400;
+			line-height: 0.9;
+			color: $brown;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: rem( 9.6 );
+			}
+		}
+
+		&__unit {
+			margin-left: rem( 0.5 );
+			font-size: 2rem;
+			color: $brown;
+
+			@include media-breakpoint-up( $bp ) {
+				font-size: 3rem;
+			}
+		}
+	}
+}

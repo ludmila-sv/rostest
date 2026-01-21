@@ -1,0 +1,128 @@
+.slider {
+	position: relative;
+	overflow: hidden;
+
+	@include section-margin-small;
+
+	.slick-slider-js {
+		overflow: hidden;
+		height: 0;
+		margin: 0 rem( -0.25 );
+
+		@include media-breakpoint-up( $bp ) {
+			margin-left: rem( -0.8 );
+			margin-right: rem( -0.8 );
+		}
+
+		&.slick-initialized {
+			overflow: visible;
+			height: auto;
+		}
+	}
+
+	.slick-list {
+		overflow: visible;
+	}
+
+	.slick-slide {
+		padding: 0 rem( 0.25 );
+
+		@include media-breakpoint-up( $bp ) {
+			padding: 0 rem( 0.8 );
+		}
+	}
+
+	.slick-controls {
+		position: absolute;
+		top: 50%;
+		left: rem( 1 );
+		right: rem( 1 );
+		z-index: 60;
+
+		@include media-breakpoint-up( $bp ) {
+			left: rem( 3 );
+			right: rem( 3 );
+		}
+	}
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		top: 0;
+		width: rem( 3.2 );
+		height: rem( 3.2 );
+		transition: all 0.3s ease-out;
+		margin-top: rem( -1.6 );
+		border-radius: 50%;
+
+		@include media-breakpoint-up( $bp ) {
+			width: rem( 4 );
+			height: rem( 4 );
+			margin-top: rem( -2 );
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.slick-prev {
+		left: 0;
+		background: $white url( '../images/common/arrow-left.svg' ) no-repeat center;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: $white url( '../images/common/arrow-left.svg' ) no-repeat center;
+		}
+	}
+
+	.slick-next {
+		right: 0;
+		background: $white url( '../images/common/arrow-right.svg' ) no-repeat center;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: $white url( '../images/common/arrow-right.svg' ) no-repeat center;
+		}
+	}
+
+	[class^='wp-block'] {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	figure,
+	.wp-block-image {
+		position: relative;
+		width: 100%;
+		margin: 0 !important;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.wp-block-image:has( figcaption ) {
+		padding-bottom: 2rem;
+	}
+
+	figcaption {
+		position: absolute; // to make slider controls vertically centerred with respect to image
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+// wp admin
+.acf-block-preview {
+	.slider {
+		.slick-slider-js {
+			height: auto;
+			margin: 0;
+		}
+	}
+}

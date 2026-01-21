@@ -1,0 +1,8 @@
+/*  set desired standard shadows */
+@mixin large-shadow {
+	box-shadow: 0 1.25rem 3.75rem rgba( 0, 0, 0, 0.15 );
+}
+
+@mixin small-shadow {
+	box-shadow: 0 0.625rem 1.5rem rgba( 0, 0, 0, 0.25 );
+}

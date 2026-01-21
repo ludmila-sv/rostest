@@ -1,0 +1,177 @@
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable no-descending-specificity */
+.wp-block-table {
+	display: block !important;
+	width: auto;
+	overflow-x: auto;
+
+	//@include content;
+	@include styled-scrollbar-hor;
+	@include section-margin-small;
+
+	table {
+		thead {
+			border-bottom: 1px solid $gray;
+
+			@include media-breakpoint-up( sm ) {
+				border: 0.0625rem solid $gray;
+			}
+		}
+
+		th {
+			@include h-5;
+
+			& {
+				min-width: rem( 20 );
+				margin: 0;
+				padding: rem( 1.6 );
+				border-color: $gray;
+
+				@include media-breakpoint-up( $bp ) {
+					min-width: auto;
+					margin: 0;
+				}
+			}
+		}
+
+		td {
+			@include body-2;
+
+			& {
+				min-width: rem( 20 );
+				margin: 0;
+				padding: rem( 1.8 ) rem( 1.6 );
+				border-color: $gray;
+
+				@include media-breakpoint-up( $bp ) {
+					min-width: auto;
+					margin: 0;
+					padding: rem( 2.4 ) rem( 1.6 );
+				}
+			}
+		}
+
+		&.has-fixed-layout {
+			width: auto;
+		}
+	}
+
+	&.is-style-stripes,
+	&.is-style-flip,
+	&.is-style-stack {
+		border: none;
+
+		table {
+			thead {
+				border-bottom: none;
+				background-color: $white;
+			}
+
+			tbody {
+				tr:nth-child( odd ) {
+					background-color: $light-gray;
+				}
+
+				tr:nth-child( even ) {
+					background-color: $white;
+				}
+			}
+
+			th,
+			td {
+				padding: rem( 0.8 ) rem( 1.6 );
+			}
+		}
+	}
+
+	&.is-style-flip {
+		@include media-breakpoint-down( $bp-down ) {
+			table {
+				display: flex;
+				overflow: hidden;
+				background: none;
+			}
+
+			thead {
+				display: flex;
+				flex-shrink: 0;
+				min-width: min-content;
+			}
+
+			tfoot {
+				display: none;
+			}
+
+			tbody {
+				display: flex;
+				position: relative;
+				overflow-x: auto;
+				overflow-y: hidden;
+
+				// optional - enable iOS momentum scrolling
+				-webkit-overflow-scrolling: touch;
+
+				// scrolling shadows
+				// The shadows act as a visual indicator for content overflow and invite scrolling.
+				background: radial-gradient( left, ellipse, rgba( 0, 0, 0, 0.2 ) 0%, rgba( 0, 0, 0, 0 ) 75% ) 0 center,
+							radial-gradient( right, ellipse, rgba( 0, 0, 0, 0.2 ) 0%, rgba( 0, 0, 0, 0 ) 75% ) 100% center;
+				background-size: 0.625rem 100%, 0.625rem 100%;
+				background-attachment: scroll, scroll;
+				background-repeat: no-repeat;
+
+				@include styled-scrollbar-hor;
+			}
+
+			tr {
+				display: flex;
+				flex-direction: column;
+				min-width: min-content;
+				flex-shrink: 0;
+			}
+
+			td,
+			th {
+				display: block;
+			}
+
+			td {
+				background-image: none !important;
+				border-left: 0;
+			}
+
+			th:not( :last-child ),
+			td:not( :last-child ) {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	&.is-style-stack {
+		@include media-breakpoint-down( $bp-down ) {
+			table,
+			tbody,
+			tr,
+			th,
+			td {
+				display: block;
+			}
+
+			thead,
+			tfoot {
+				display: none;
+			}
+
+			table tr {
+				padding: rem( 0.8 ) 0 rem( 3.2 );
+			}
+
+			table th {
+				padding: rem( 2.4 ) rem( 1.6 ) 0;
+			}
+
+			table td {
+				padding: 0 rem( 1.6 );
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": false,
+			"customFontSize": false,
+			"dropCap": false,
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"textDecoration": false,
+			"textTransform": false,
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "0.625rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1.25rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"slug": "x-large",
+					"size": "3rem"
+				}
+			]
+		},
+		"color": {
+			"defaultPalette": false,
+			"custom": false,
+            "palette": [
+                {
+                    "name": "Чёрный",
+                    "slug": "black",
+                    "color": "#282828"
+                },
+                {
+                    "name": "Тёмный",
+                    "slug": "dark",
+                    "color": "#252c3f"
+                },
+                {
+                    "name": "Светлый",
+                    "slug": "light",
+                    "color": "#f8f8fa"
+                },
+                {
+                    "name": "Светло-серый",
+                    "slug": "lightgray",
+                    "color": "#e7ecf2"
+                },
+                {
+                    "name": "Серый",
+                    "slug": "gray",
+                    "color": "#cecece"
+                },
+                {
+                    "name": "Тёмно-синий",
+                    "slug": "accent",
+                    "color": "#081651"
+                },
+                {
+                    "name": "Бежевый",
+                    "slug": "beigedark",
+                    "color": "#af8e8e"
+                },
+                {
+                    "name": "Светло-бежевый",
+                    "slug": "beigelight",
+                    "color": "#f0efea"
+                },
+                {
+                    "name": "Корочневый",
+                    "slug": "brown",
+                    "color": "#7b5b5b"
+                },
+                {
+                    "name": "Красно-коричневый",
+                    "slug": "maroon",
+                    "color": "#800000"
+                },
+                {
+                    "name": "Красный",
+                    "slug": "red",
+                    "color": "#dd493c"
+                },
+                {
+                    "name": "Белый",
+                    "slug": "white",
+                    "color": "#ffffff"
+                }
+            ]
+        }
+	},
+	"styles": {
+		"blocks": {
+			"core/table": {
+			}
+		}
+	},
+	"customTemplates": [],
+	"templateParts": [],
+	"patterns": []
+}

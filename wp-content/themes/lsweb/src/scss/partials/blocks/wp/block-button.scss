@@ -1,0 +1,59 @@
+/* stylelint-disable scss/at-extend-no-missing-placeholder */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable no-duplicate-selectors */
+/* Gutenberg styles for button */
+
+.wp-block-buttons {
+	// @include section-margin-small;
+}
+
+.content {
+	.wp-block-buttons {
+		// @include content;
+		// @include section-margin-small;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.wp-block-buttons .wp-block-button {
+	// @include section-margin-small;
+}
+
+.wp-block-button {
+	&.is-style-primary {
+		.wp-block-button__link {
+			@extend .btn;
+			@extend .btn--primary;
+		}
+	}
+
+	&.is-style-secondary {
+		.wp-block-button__link {
+			@extend .btn;
+			@extend .btn--secondary;
+		}
+	}
+
+	&.is-style-tertiary {
+		.wp-block-button__link {
+			@extend .btn;
+			@extend .btn--tertiary;
+		}
+	}
+
+	&.is-style-fill,
+	&.is-style-outline.is-style-outline--1 {
+		.wp-block-button__link {
+			@extend .btn;
+		}
+	}
+
+	&.is-style-outline.is-style-outline--1 {
+		.wp-block-button__link {
+			border-color: currentColor !important;
+		}
+	}
+}

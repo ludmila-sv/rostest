@@ -1,0 +1,10 @@
+@mixin retina {
+	@media ( min-device-pixel-ratio: 1.5 ) {
+		@content;
+	}
+}
+
+@mixin optimize2DAnimationsOn3D {
+	backface-visibility: hidden;
+	perspective: 1000;
+}

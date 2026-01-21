@@ -1,0 +1,135 @@
+@mixin styled-scrollbar-transparent {
+	&::-webkit-scrollbar {
+		position: relative;
+		z-index: 30;
+		width: 0.125rem;
+		background: transparent;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		width: 0.125rem;
+		background: transparent;
+		border-radius: 0.0625rem;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		border-radius: 0.0625rem;
+		background-color: transparent;
+		transition: all 0.2s;
+	}
+
+	/* hovered state can be different */
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			border-radius: 0.0625rem;
+			background-color: transparent;
+		}
+	}
+
+	/* If Current browser's window lost focus, e.g. user has gone to another window. */
+	&::-webkit-scrollbar-thumb:window-inactive {
+		background: transparent;
+	}
+}
+
+@mixin styled-scrollbar {
+	&::-webkit-scrollbar {
+		position: relative;
+		z-index: 30;
+		width: 0.625rem;
+		background: transparent;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparentize( $light, 0.3 );
+		border-radius: 0.625rem;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		border-radius: 0.625rem;
+		background-color: transparentize( $accent-variant, 0.3 );
+		transition: all 0.2s;
+	}
+
+	/* hovered state can be different */
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			border-radius: 0.625rem;
+			background-color: $accent;
+		}
+	}
+
+	/* If Current browser's window lost focus, e.g. user has gone to another window. */
+	&::-webkit-scrollbar-thumb:window-inactive {
+		background: transparentize( $accent, 0.8 );
+	}
+}
+
+@mixin styled-scrollbar-hor {
+	&::-webkit-scrollbar {
+		position: relative;
+		z-index: 30;
+		height: 0.625rem;
+		background: transparent;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparentize( $light, 0.3 );
+		border-radius: 0.625rem;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		border-radius: 0.625rem;
+		background-color: transparentize( $accent-variant, 0.3 );
+		transition: all 0.2s;
+	}
+
+	/* hovered state can be different */
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			background-color: $accent;
+		}
+	}
+
+	/* If Current browser's window lost focus, e.g. user has gone to another window. */
+	&::-webkit-scrollbar-thumb:window-inactive {
+		background: transparentize( $accent, 0.8 );
+	}
+}
+
+@mixin styled-scrollbar-transparent-hor {
+	&::-webkit-scrollbar {
+		position: relative;
+		z-index: 30;
+		height: 0.625rem;
+		background: transparent;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+	}
+
+	/* hovered state can be different */
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+	}
+
+	/* If Current browser's window lost focus, e.g. user has gone to another window. */
+	&::-webkit-scrollbar-thumb:window-inactive {
+		background: transparent;
+	}
+}
