@@ -88,6 +88,8 @@ $doctors_query = new WP_Query( $args );
 						$nav = str_replace( ' role="navigation"', '', $nav );
 						echo $nav; //phpcs:ignore
 
+						wp_reset_postdata();
+
 					} else {
 						?>
 						
