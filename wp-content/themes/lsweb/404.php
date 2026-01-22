@@ -33,4 +33,4 @@ get_header(); ?>
 	</div>
 </div>
 
-<?php get_footer( 'none' ); ?>
+<?php get_footer(); ?>
