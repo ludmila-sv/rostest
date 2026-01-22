@@ -6,7 +6,7 @@
  */
 
 if ( ! defined( 'ACF_SHOW_ADMIN' ) || ACF_SHOW_ADMIN !== true ) {
-	//add_filter( 'acf/settings/show_admin', '__return_false' );
+	add_filter( 'acf/settings/show_admin', '__return_false' );
 }
 
 // Load in-theme acf if it's not loaded via plugin in wp-content/plugins/.
